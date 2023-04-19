@@ -1,0 +1,6 @@
+[09-Apr-2023 19:08:18 America/New_York] PHP Notice:  Undefined variable: product_meta in /home/perfozon/public_html/app/Plugins/eCommerce/views/products/add.blade.php on line 203
+[09-Apr-2023 19:08:18 America/New_York] PHP Notice:  Undefined variable: product_meta in /home/perfozon/public_html/app/Plugins/eCommerce/views/products/add.blade.php on line 960
+[09-Apr-2023 19:08:18 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Plugins/eCommerce/views/products/add.blade.php:998
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Plugins/eCommerce/views/products/add.blade.php on line 998

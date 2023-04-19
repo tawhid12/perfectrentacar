@@ -1,0 +1,6 @@
+[09-Apr-2023 04:56:41 America/New_York] PHP Fatal error:  Trait 'Illuminate\Auth\Access\HandlesAuthorization' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Policies/LocationPolicy.php on line 12
+[09-Apr-2023 04:56:52 America/New_York] PHP Fatal error:  Trait 'Illuminate\Auth\Access\HandlesAuthorization' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Policies/ProductPolicy.php on line 12
+[09-Apr-2023 04:57:03 America/New_York] PHP Fatal error:  Trait 'Illuminate\Auth\Access\HandlesAuthorization' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Policies/TermPolicy.php on line 12
+[09-Apr-2023 11:27:43 America/New_York] PHP Fatal error:  Trait 'Illuminate\Auth\Access\HandlesAuthorization' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Policies/TermPolicy.php on line 12
+[09-Apr-2023 11:27:58 America/New_York] PHP Fatal error:  Trait 'Illuminate\Auth\Access\HandlesAuthorization' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Policies/ProductPolicy.php on line 12
+[09-Apr-2023 11:28:14 America/New_York] PHP Fatal error:  Trait 'Illuminate\Auth\Access\HandlesAuthorization' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Policies/LocationPolicy.php on line 12

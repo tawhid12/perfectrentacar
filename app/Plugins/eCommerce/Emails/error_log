@@ -1,0 +1,4 @@
+[09-Apr-2023 05:39:36 America/New_York] PHP Fatal error:  Class 'Corp\Plugins\eCommerce\Emails\EmailGateway' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Emails/EmailNewOrder.php on line 20
+[09-Apr-2023 05:39:58 America/New_York] PHP Fatal error:  Class 'Illuminate\Mail\Mailable' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Emails/OrdersEmail.php on line 15
+[09-Apr-2023 11:53:48 America/New_York] PHP Fatal error:  Class 'Corp\Plugins\eCommerce\Emails\EmailGateway' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Emails/EmailNewOrder.php on line 20
+[09-Apr-2023 11:58:39 America/New_York] PHP Fatal error:  Class 'Illuminate\Mail\Mailable' not found in /home/perfozon/public_html/app/Plugins/eCommerce/Emails/OrdersEmail.php on line 15

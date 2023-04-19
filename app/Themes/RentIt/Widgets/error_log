@@ -1,0 +1,10 @@
+[09-Apr-2023 11:54:05 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/FlickrImagesWidget.php on line 11
+[09-Apr-2023 12:07:21 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/AboutUsWidget.php on line 7
+[09-Apr-2023 12:07:46 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/ArchiveWidgets.php on line 20
+[09-Apr-2023 12:08:00 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/CategoriesWidgets.php on line 16
+[09-Apr-2023 12:08:30 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/MenuWidget.php on line 15
+[09-Apr-2023 12:08:46 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/NewsLetterWidget.php on line 15
+[09-Apr-2023 12:09:01 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/PostsWidgets.php on line 19
+[09-Apr-2023 12:09:55 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/SearchWidget.php on line 7
+[09-Apr-2023 12:10:27 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/TagsWidgets.php on line 11
+[09-Apr-2023 12:11:02 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Themes/RentIt/Widgets/TwitterWidget.php on line 7

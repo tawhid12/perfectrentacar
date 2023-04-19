@@ -1,0 +1,9 @@
+[09-Apr-2023 20:15:53 America/New_York] PHP Notice:  Undefined variable: portfolio in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 34
+[09-Apr-2023 20:15:53 America/New_York] PHP Notice:  Trying to get property 'porCategories' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 34
+[09-Apr-2023 20:15:53 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 34
+[09-Apr-2023 20:15:53 America/New_York] PHP Notice:  Undefined variable: portfolio in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 54
+[09-Apr-2023 20:15:53 America/New_York] PHP Notice:  Trying to get property 'porCategories' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 54
+[09-Apr-2023 20:15:53 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 54
+[09-Apr-2023 20:15:53 America/New_York] PHP Notice:  Undefined variable: portfolio in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 97
+[09-Apr-2023 20:15:53 America/New_York] PHP Notice:  Trying to get property 'porCategories' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 97
+[09-Apr-2023 20:15:53 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/perfozon/public_html/app/Themes/RentIt/views/portfolio/all-portfolio.blade.php on line 97

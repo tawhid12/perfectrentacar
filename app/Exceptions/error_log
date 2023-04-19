@@ -1,0 +1,4 @@
+[05-Apr-2023 16:06:34 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/perfozon/public_html/app/Exceptions/Handler.php on line 10
+[08-Apr-2023 21:24:27 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/perfozon/public_html/app/Exceptions/Handler.php on line 10
+[09-Apr-2023 03:08:58 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/perfozon/public_html/app/Exceptions/Handler.php on line 10
+[17-Apr-2023 18:16:43 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Exceptions\Handler' not found in /home/perfozon/public_html/app/Exceptions/Handler.php on line 10

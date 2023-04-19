@@ -1,0 +1,8 @@
+[09-Apr-2023 20:34:51 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/widgets/productFilter.blade.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/widgets/productFilter.blade.php on line 21
+[09-Apr-2023 23:19:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/widgets/productFilter.blade.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/widgets/productFilter.blade.php on line 21

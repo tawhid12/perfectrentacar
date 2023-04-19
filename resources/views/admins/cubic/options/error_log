@@ -1,0 +1,4 @@
+[09-Apr-2023 16:16:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/resources/views/admins/cubic/options/all.blade.php:107
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/resources/views/admins/cubic/options/all.blade.php on line 107

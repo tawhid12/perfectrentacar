@@ -1,0 +1,20 @@
+[05-Apr-2023 16:06:58 America/New_York] PHP Notice:  Undefined variable: factory in /home/perfozon/public_html/database/factories/UserFactory.php on line 16
+[05-Apr-2023 16:06:58 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/perfozon/public_html/database/factories/UserFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/database/factories/UserFactory.php on line 16
+[08-Apr-2023 21:32:23 America/New_York] PHP Notice:  Undefined variable: factory in /home/perfozon/public_html/database/factories/UserFactory.php on line 16
+[08-Apr-2023 21:32:23 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/perfozon/public_html/database/factories/UserFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/database/factories/UserFactory.php on line 16
+[09-Apr-2023 03:07:32 America/New_York] PHP Notice:  Undefined variable: factory in /home/perfozon/public_html/database/factories/UserFactory.php on line 16
+[09-Apr-2023 03:07:32 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/perfozon/public_html/database/factories/UserFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/database/factories/UserFactory.php on line 16
+[18-Apr-2023 00:24:26 America/New_York] PHP Notice:  Undefined variable: factory in /home/perfozon/public_html/database/factories/UserFactory.php on line 16
+[18-Apr-2023 00:24:26 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function define() on null in /home/perfozon/public_html/database/factories/UserFactory.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/database/factories/UserFactory.php on line 16

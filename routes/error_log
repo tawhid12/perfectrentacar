@@ -1,0 +1,92 @@
+[05-Apr-2023 16:05:52 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/api.php on line 16
+[05-Apr-2023 16:05:52 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home/perfozon/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/channels.php on line 14
+[05-Apr-2023 16:05:52 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/perfozon/public_html/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/console.php on line 16
+[05-Apr-2023 16:05:53 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function lr_is_installed() in /home/perfozon/public_html/routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/web.php on line 14
+[08-Apr-2023 18:02:06 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function lr_is_installed() in /home/perfozon/public_html/routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/web.php on line 14
+[08-Apr-2023 18:02:33 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/perfozon/public_html/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/console.php on line 16
+[08-Apr-2023 18:02:44 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home/perfozon/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/channels.php on line 14
+[08-Apr-2023 18:02:51 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/api.php on line 16
+[08-Apr-2023 20:32:32 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function lr_is_installed() in /home/perfozon/public_html/routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/web.php on line 14
+[08-Apr-2023 20:33:17 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/perfozon/public_html/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/console.php on line 16
+[08-Apr-2023 20:33:28 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home/perfozon/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/channels.php on line 14
+[08-Apr-2023 20:33:39 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/api.php on line 16
+[13-Apr-2023 21:03:07 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function lr_is_installed() in /home/perfozon/public_html/routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/web.php on line 14
+[15-Apr-2023 04:15:44 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home/perfozon/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/channels.php on line 14
+[15-Apr-2023 14:05:36 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/api.php on line 16
+[15-Apr-2023 16:45:22 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/perfozon/public_html/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/console.php on line 16
+[17-Apr-2023 19:22:27 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function lr_is_installed() in /home/perfozon/public_html/routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/web.php on line 14
+[18-Apr-2023 04:03:38 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home/perfozon/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/channels.php on line 14
+[18-Apr-2023 07:23:30 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/perfozon/public_html/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/console.php on line 16
+[18-Apr-2023 22:37:48 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/routes/api.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/api.php on line 16
+[18-Apr-2023 22:37:56 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Broadcast' not found in /home/perfozon/public_html/routes/channels.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/channels.php on line 14
+[18-Apr-2023 22:38:14 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Artisan' not found in /home/perfozon/public_html/routes/console.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/console.php on line 16
+[18-Apr-2023 22:38:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function lr_is_installed() in /home/perfozon/public_html/routes/web.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/routes/web.php on line 14

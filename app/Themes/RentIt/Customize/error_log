@@ -1,0 +1,3 @@
+[09-Apr-2023 11:58:52 America/New_York] PHP Fatal error:  Class 'Corp\CMS\CustomizeControl' not found in /home/perfozon/public_html/app/Themes/RentIt/Customize/SocialButtons.php on line 14
+[09-Apr-2023 11:59:08 America/New_York] PHP Fatal error:  Class 'Corp\CMS\CustomizeControl' not found in /home/perfozon/public_html/app/Themes/RentIt/Customize/SocialButtonsHeader.php on line 14
+[09-Apr-2023 11:59:24 America/New_York] PHP Fatal error:  Class 'Corp\CMS\CustomizeControl' not found in /home/perfozon/public_html/app/Themes/RentIt/Customize/TimeOptions.php on line 14

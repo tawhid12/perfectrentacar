@@ -1,0 +1,4 @@
+[09-Apr-2023 12:02:59 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Controller' not found in /home/perfozon/public_html/app/Http/Controllers/Auth/ForgotPasswordController.php on line 8
+[09-Apr-2023 12:03:13 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Controller' not found in /home/perfozon/public_html/app/Http/Controllers/Auth/LoginController.php on line 8
+[09-Apr-2023 12:03:26 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Controller' not found in /home/perfozon/public_html/app/Http/Controllers/Auth/RegisterController.php on line 11
+[09-Apr-2023 12:03:39 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Controller' not found in /home/perfozon/public_html/app/Http/Controllers/Auth/ResetPasswordController.php on line 9

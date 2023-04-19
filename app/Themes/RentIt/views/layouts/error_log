@@ -1,0 +1,24 @@
+[09-Apr-2023 19:59:52 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function the_image_url() in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/MaintenanceMode.blade.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/MaintenanceMode.blade.php on line 54
+[09-Apr-2023 20:01:35 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_mod() in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/header.blade.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/header.blade.php on line 48
+[09-Apr-2023 20:02:07 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_mod() in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/home6-layout.blade.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/home6-layout.blade.php on line 55
+[09-Apr-2023 23:31:21 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function the_image_url() in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/MaintenanceMode.blade.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/MaintenanceMode.blade.php on line 54
+[09-Apr-2023 23:31:34 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_mod() in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/header.blade.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/header.blade.php on line 48
+[09-Apr-2023 23:31:44 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_mod() in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/home6-layout.blade.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/layouts/home6-layout.blade.php on line 55

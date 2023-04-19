@@ -1,0 +1,2 @@
+[09-Apr-2023 12:07:07 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Frontend\FrontendController' not found in /home/perfozon/public_html/app/Http/Controllers/Rentit/IndexController.php on line 10
+[09-Apr-2023 12:07:39 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Frontend\FrontendController' not found in /home/perfozon/public_html/app/Http/Controllers/Rentit/PostsController.php on line 12

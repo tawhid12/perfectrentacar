@@ -1,0 +1,10 @@
+[05-Apr-2023 16:12:48 America/New_York] PHP Fatal error:  Class 'V\Plugins\Plugin' not found in /home/perfozon/public_html/app/Plugins/LocoTranslate/LocoTranslatePlugin.php on line 20
+[05-Apr-2023 16:12:49 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/app/Plugins/LocoTranslate/routes.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Plugins/LocoTranslate/routes.php on line 10
+[09-Apr-2023 01:54:53 America/New_York] PHP Fatal error:  Class 'V\Plugins\Plugin' not found in /home/perfozon/public_html/app/Plugins/LocoTranslate/LocoTranslatePlugin.php on line 20
+[09-Apr-2023 01:55:58 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/app/Plugins/LocoTranslate/routes.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Plugins/LocoTranslate/routes.php on line 10

@@ -1,0 +1,2 @@
+[09-Apr-2023 12:13:23 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Http/Widgets/old/NewsWidget.php on line 14
+[09-Apr-2023 12:13:29 America/New_York] PHP Fatal error:  Class 'Corp\Http\Widgets\Widgets' not found in /home/perfozon/public_html/app/Http/Widgets/old/RentitSearhWigdet.php on line 10

@@ -1,0 +1,10 @@
+[05-Apr-2023 16:12:51 America/New_York] PHP Fatal error:  Class 'V\Plugins\Plugin' not found in /home/perfozon/public_html/app/Plugins/PageBuilder/PageBuilderPlugin.php on line 17
+[05-Apr-2023 16:12:52 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/app/Plugins/PageBuilder/routes.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Plugins/PageBuilder/routes.php on line 9
+[09-Apr-2023 01:57:33 America/New_York] PHP Fatal error:  Class 'V\Plugins\Plugin' not found in /home/perfozon/public_html/app/Plugins/PageBuilder/PageBuilderPlugin.php on line 17
+[09-Apr-2023 01:57:58 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Route' not found in /home/perfozon/public_html/app/Plugins/PageBuilder/routes.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Plugins/PageBuilder/routes.php on line 9

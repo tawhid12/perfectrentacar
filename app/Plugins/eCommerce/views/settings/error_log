@@ -1,0 +1,4 @@
+[09-Apr-2023 19:13:21 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Plugins/eCommerce/views/settings/all-settings.blade.php:110
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Plugins/eCommerce/views/settings/all-settings.blade.php on line 110

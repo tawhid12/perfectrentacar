@@ -1,0 +1,44 @@
+[09-Apr-2023 20:31:16 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home1.blade.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home1.blade.php on line 45
+[09-Apr-2023 20:31:38 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home2.blade.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home2.blade.php on line 39
+[09-Apr-2023 20:32:00 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home3.blade.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home3.blade.php on line 39
+[09-Apr-2023 20:32:21 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home4.blade.php:69
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home4.blade.php on line 69
+[09-Apr-2023 20:32:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home5.blade.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home5.blade.php on line 31
+[09-Apr-2023 20:33:01 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home6.blade.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home6.blade.php on line 44
+[09-Apr-2023 23:20:20 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home6.blade.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home6.blade.php on line 44
+[09-Apr-2023 23:20:36 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home5.blade.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home5.blade.php on line 31
+[09-Apr-2023 23:20:48 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home3.blade.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home3.blade.php on line 39
+[09-Apr-2023 23:20:59 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home2.blade.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home2.blade.php on line 39
+[09-Apr-2023 23:21:10 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function selected() in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home1.blade.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/templates/home1.blade.php on line 45

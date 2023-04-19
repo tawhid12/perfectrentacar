@@ -1,0 +1,6 @@
+[09-Apr-2023 06:00:10 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Admin\AdminController' not found in /home/perfozon/public_html/packages/V/Plugins/src/Plugin.php on line 9
+[09-Apr-2023 06:01:00 America/New_York] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/perfozon/public_html/packages/V/Plugins/src/PluginServiceProvider.php on line 5
+[09-Apr-2023 06:01:18 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Frontend\FrontendController' not found in /home/perfozon/public_html/packages/V/Plugins/src/Theme.php on line 15
+[09-Apr-2023 13:51:05 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Admin\AdminController' not found in /home/perfozon/public_html/packages/V/Plugins/src/Plugin.php on line 9
+[09-Apr-2023 13:51:14 America/New_York] PHP Fatal error:  Class 'Illuminate\Support\ServiceProvider' not found in /home/perfozon/public_html/packages/V/Plugins/src/PluginServiceProvider.php on line 5
+[09-Apr-2023 13:51:23 America/New_York] PHP Fatal error:  Class 'Corp\Http\Controllers\Frontend\FrontendController' not found in /home/perfozon/public_html/packages/V/Plugins/src/Theme.php on line 15

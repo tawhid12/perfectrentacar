@@ -1,0 +1,8 @@
+[05-Apr-2023 16:12:32 America/New_York] PHP Fatal error:  Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/perfozon/public_html/app/Http/Middleware/EncryptCookies.php on line 7
+[05-Apr-2023 16:12:33 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/perfozon/public_html/app/Http/Middleware/TrimStrings.php on line 7
+[05-Apr-2023 16:12:33 America/New_York] PHP Fatal error:  Class 'Fideloper\Proxy\TrustProxies' not found in /home/perfozon/public_html/app/Http/Middleware/TrustProxies.php on line 8
+[05-Apr-2023 16:12:33 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/perfozon/public_html/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[09-Apr-2023 01:47:50 America/New_York] PHP Fatal error:  Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/perfozon/public_html/app/Http/Middleware/EncryptCookies.php on line 7
+[09-Apr-2023 01:48:06 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\TrimStrings' not found in /home/perfozon/public_html/app/Http/Middleware/TrimStrings.php on line 7
+[09-Apr-2023 01:48:12 America/New_York] PHP Fatal error:  Class 'Fideloper\Proxy\TrustProxies' not found in /home/perfozon/public_html/app/Http/Middleware/TrustProxies.php on line 8
+[09-Apr-2023 01:48:18 America/New_York] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/perfozon/public_html/app/Http/Middleware/VerifyCsrfToken.php on line 7

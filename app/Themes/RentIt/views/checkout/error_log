@@ -1,0 +1,12 @@
+[09-Apr-2023 18:48:19 America/New_York] PHP Notice:  Undefined variable: ecommerce_cart in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php on line 43
+[09-Apr-2023 18:48:19 America/New_York] PHP Notice:  Undefined variable: ecommerce_cart in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php on line 43
+[09-Apr-2023 18:48:19 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function rentit_DateDiff() in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php on line 51
+[09-Apr-2023 22:47:40 America/New_York] PHP Notice:  Undefined variable: ecommerce_cart in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php on line 43
+[09-Apr-2023 22:47:40 America/New_York] PHP Notice:  Undefined variable: ecommerce_cart in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php on line 43
+[09-Apr-2023 22:47:40 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function rentit_DateDiff() in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/checkout/checkout.blade.php on line 51

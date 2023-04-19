@@ -1,0 +1,18 @@
+[09-Apr-2023 20:18:22 America/New_York] PHP Notice:  Undefined variable: item in /home/perfozon/public_html/app/Themes/RentIt/views/posts/comment-old.blade.php on line 6
+[09-Apr-2023 20:18:22 America/New_York] PHP Notice:  Trying to get property 'user' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/posts/comment-old.blade.php on line 6
+[09-Apr-2023 20:18:22 America/New_York] PHP Notice:  Trying to get property 'email' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/posts/comment-old.blade.php on line 6
+[09-Apr-2023 20:19:08 America/New_York] PHP Notice:  Undefined variable: item in /home/perfozon/public_html/app/Themes/RentIt/views/posts/comment.blade.php on line 6
+[09-Apr-2023 20:19:08 America/New_York] PHP Notice:  Trying to get property 'user' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/posts/comment.blade.php on line 6
+[09-Apr-2023 20:19:08 America/New_York] PHP Notice:  Trying to get property 'email' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/posts/comment.blade.php on line 6
+[09-Apr-2023 20:20:54 America/New_York] PHP Notice:  Undefined variable: post in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php on line 54
+[09-Apr-2023 20:20:54 America/New_York] PHP Notice:  Trying to get property 'comments' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php on line 54
+[09-Apr-2023 20:20:54 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function where() on null in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php on line 54
+[09-Apr-2023 23:21:29 America/New_York] PHP Notice:  Undefined variable: post in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php on line 54
+[09-Apr-2023 23:21:29 America/New_York] PHP Notice:  Trying to get property 'comments' of non-object in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php on line 54
+[09-Apr-2023 23:21:29 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function where() on null in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/posts/single-content.blade.php on line 54

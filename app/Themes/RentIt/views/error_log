@@ -1,0 +1,8 @@
+[09-Apr-2023 05:54:56 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_mod() in /home/perfozon/public_html/app/Themes/RentIt/views/footer.blade.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/footer.blade.php on line 28
+[09-Apr-2023 13:50:56 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function get_theme_mod() in /home/perfozon/public_html/app/Themes/RentIt/views/footer.blade.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/app/Themes/RentIt/views/footer.blade.php on line 28

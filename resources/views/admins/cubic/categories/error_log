@@ -1,0 +1,13 @@
+[09-Apr-2023 16:05:28 America/New_York] PHP Notice:  Undefined variable: categories in /home/perfozon/public_html/resources/views/admins/cubic/categories/all-categories.blade.php on line 19
+[09-Apr-2023 16:05:45 America/New_York] PHP Notice:  Undefined variable: item in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php on line 46
+[09-Apr-2023 16:05:45 America/New_York] PHP Notice:  Trying to get property 'posts' of non-object in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php on line 46
+[09-Apr-2023 16:05:45 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function where() on null in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php on line 46
+[09-Apr-2023 22:22:03 America/New_York] PHP Notice:  Undefined variable: item in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php on line 46
+[09-Apr-2023 22:22:03 America/New_York] PHP Notice:  Trying to get property 'posts' of non-object in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php on line 46
+[09-Apr-2023 22:22:03 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function where() on null in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/perfozon/public_html/resources/views/admins/cubic/categories/category-list.blade.php on line 46

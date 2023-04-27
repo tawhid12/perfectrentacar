@@ -1,15 +1,15 @@
-<section id="<?php echo $id; ?>" class="page-section no-padding  pb-module-section">
+<!--<section id="<?php echo $id; ?>" class="page-section no-padding  pb-module-section">
 
-    <div class="container full-width">
+    <div class="container full-width">-->
 
         <!-- Google map -->
-        <div class="google-map">
+        <!--<div class="google-map">
             <div id="map-canvas"></div>
 
-        </div>
+        </div>-->
         <!-- /Google map -->
 
-    </div>
+    <!--</div>
     <script type="text/javascript">
         var
             mapObject,
@@ -57,4 +57,4 @@
 
         }
     </script>
-</section>
+</section>-->

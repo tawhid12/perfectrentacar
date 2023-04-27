@@ -41,12 +41,12 @@
 								<a href="mailto:hello@rentit.com">perfectlinerac@yahoo.com</a>
 							</div>
 						</div>
-						{{--<div class="edit media">
+						<!--<div class="edit media">
 							<div class="edit media-body">
 								<strong>Returns and Refunds:</strong><br>
 								<a href="mailto:hello@rentit.com">perfectlinerac@yahoo.com</a>
 							</div>
-						</div>--}}
+						</div>-->
 					</div>
 
 				</div>

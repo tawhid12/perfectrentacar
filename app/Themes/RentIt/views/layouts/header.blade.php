@@ -104,7 +104,7 @@
 
 							
 								?>
-                                <div class="entry language">
+                                {{--<div class="entry language">
                                     <div class="title"><b>
                                             @if(isset($langs[App::getLocale()]))
                                                 {{ $langs[App::getLocale()]}}
@@ -123,7 +123,7 @@
                                         @endforeach
 
                                     </div>
-                                </div>
+                                </div>--}}
 								<?php  } ?>
                             @endif
                         </div>

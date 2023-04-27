@@ -105,28 +105,7 @@
 
 							
 								?>
-                                <div class="entry language">
-                                    <div class="title"><b>
-                                            <?php if(isset($langs[App::getLocale()])): ?>
-                                                <?php echo e($langs[App::getLocale()]); ?>
-
-                                            <?php else: ?>
-                                                <?php echo e(App::getLocale()); ?>
-
-                                            <?php endif; ?>
-
-                                        </b></div>
-                                    <div class="language-toggle header-toggle-animation">
-
-                                        <?php $__currentLoopData = $langs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $k => $v): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-                                            <a href="<?php echo e(route( 'setlocale', [ 'lang' => $k] )); ?>"><span
-                                                        class="flag-icon flag-icon-ru"></span> <?php echo e($v); ?> </a>
-
-                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
-                                    </div>
-                                </div>
+                                
 								<?php  } ?>
                             <?php endif; ?>
                         </div>

@@ -97,7 +97,7 @@ class AdminController extends CMSController {
 
 			]
 		);
-		$baseCms->addBackendMenu( [
+		/*$baseCms->addBackendMenu( [
 
 				'name' => __( 'admin.Posts' ),
 				'label' => '',
@@ -129,7 +129,7 @@ class AdminController extends CMSController {
 				]
 
 			]
-		);
+		);*/
 		$baseCms->addBackendMenu( [
 
 				'name' => __( 'admin.Pages' ),
@@ -155,7 +155,7 @@ class AdminController extends CMSController {
 
 			]
 		);
-		$baseCms->addBackendMenu( [
+		/*$baseCms->addBackendMenu( [
 
 				'name' => __( 'admin.Comments' ),
 				'label' => '',
@@ -291,7 +291,7 @@ class AdminController extends CMSController {
 
 
 			]
-		);
+		);*/
 
 
 		$baseCms->addBackendMenu( [

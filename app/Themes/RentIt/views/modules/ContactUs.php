@@ -13,40 +13,40 @@
 							<i class="edit pull-left fa fa-home"></i>
 							<div class="edit media-body">
 								<strong>Address:</strong><br>
-								987 Main st. New York, NY, 00001, U.S.A
+								Dubai
 							</div>
 						</div>
 						<div class="edit media">
 							<i class="edit pull-left fa fa-phone"></i>
 							<div class="edit media-body">
 								<strong>Telephone:</strong><br>
-								(012) 345-7689
+								+971 54 495 7070
 							</div>
 						</div>
 						<div class="edit media">
 							<i class="edit pull-left fa fa-envelope-o"></i>
 							<div class="edit media-body">
 								<strong>Fax:</strong><br>
-								0123456789
+								
 							</div>
 						</div>
 						<div class="edit media">
 							<div class="edit media-body">
-								Phasellus pellentesque purus in massa aenean in pede phasellus libero ac tellus pellentesque semper.
+								At Perfect Line,Our customer’s satisfaction comes first,We provide mobility solutions that benefi
 							</div>
 						</div>
 						<div class="edit media">
 							<div class="edit media-body">
 								<strong>Customer Service:</strong><br>
-								<a href="mailto:hello@rentit.com">hello@rentit.com</a>
+								<a href="mailto:hello@rentit.com">perfectlinerac@yahoo.com</a>
 							</div>
 						</div>
-						<div class="edit media">
+						{{--<div class="edit media">
 							<div class="edit media-body">
 								<strong>Returns and Refunds:</strong><br>
-								<a href="mailto:hello@rentit.com">hello@rentit.com</a>
+								<a href="mailto:hello@rentit.com">perfectlinerac@yahoo.com</a>
 							</div>
-						</div>
+						</div>--}}
 					</div>
 
 				</div>

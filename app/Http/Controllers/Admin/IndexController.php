@@ -42,6 +42,7 @@ class IndexController extends AdminController {
 		$this->userWidget();
 
 		return $this->renderOutput();
+		
 	}
 
 

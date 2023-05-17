@@ -2,7 +2,7 @@
 
 
     @if(!isset($hide_widgets) || $hide_widgets == false )
-        <div class="footer-widgets">
+        {{--<div class="footer-widgets">
             <div class="container">
                 <div class="row">
 
@@ -14,7 +14,7 @@
 
                 </div>
             </div>
-        </div>
+        </div>--}}
     @endif
 
     <div class="footer-meta">
@@ -22,7 +22,7 @@
             <div class="row">
 
                 <div class="col-sm-12">
-                    <p class="btn-row text-center">
+                    {{--<p class="btn-row text-center">
 
 						<?php
 						if(get_theme_mod( 'footer_enable_social_buttons', true )){
@@ -43,7 +43,7 @@
 						}
 						?>
 
-                    </p>
+                    </p>--}}
                     <div class="copyright">
                         {{get_theme_mod('footer_copyright', '©'.  date('Y', time()) . '  Rent It — An One Page Rental Car Theme made with passion by jThemes Studio')}}
                     </div>

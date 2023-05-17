@@ -2,7 +2,7 @@
 
 
     @if(!isset($hide_widgets) || $hide_widgets == false )
-        {{--<div class="footer-widgets">
+        <div class="footer-widgets">
             <div class="container">
                 <div class="row">
 
@@ -14,7 +14,7 @@
 
                 </div>
             </div>
-        </div>--}}
+        </div>
     @endif
 
     <div class="footer-meta">

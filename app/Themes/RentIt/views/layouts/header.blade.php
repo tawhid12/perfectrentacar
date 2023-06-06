@@ -32,6 +32,7 @@
             background: url(rentit/assets/img/preview/page-section-contact-2.png);
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
         }
         .page-section.dark{
             color:#fff;

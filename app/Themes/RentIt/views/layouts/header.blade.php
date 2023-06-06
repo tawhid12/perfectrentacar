@@ -14,7 +14,56 @@
           href="{{ asset(config('settings.theme')) }}/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="{{ asset(config('settings.theme')) }}/assets/ico/favicon.ico">-->
     {!! $lr_header ?? '' !!}
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .social-icons{
+            margin:8px 0px;
+        }
+        .social-icons li {
+            padding: 0px 10px 0 0;
+        }
+        .main-slider .slide2{
+            background-image: url(rentit/assets/img/preview/slider/slide-1.png);
+        }
+        .main-slider .slide3{
+            background-image: url(rentit/assets/img/preview/slider/slide-2.png);
+        }
+        .page-section.contact{
+            background: url(rentit/assets/img/preview/page-section-contact-2.png);
+        }
+        .page-section.dark{
+            color:#fff;
+        }
+        .main-slider .ver3 .caption-subtitle{
+            color:#000;
+        }
+        .content-area{
+            background: url(rentit/assets/img/preview/contact-us-bg.png);
+        }
+        .content-area::after{
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,1);
+            opacity: 0.6;
+            z-index: -1;
+        }
+        .block-title{
+            color:#fff;
+        }
+        .contact-info .media .fa{
+            background-color: rebeccapurple;
+        }
+        .media-body{
+            color:#fff;
+        }
+        .media-body a{
+            color:#fff;
+        }
+    </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">
 
@@ -34,6 +83,22 @@
     </div>
     <!-- /PRELOADER -->
 @endif
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="display:flex;justify-content: end;align-items: center;">
+     
+               
+                    <ul class="social-icons">
+                        <li><a target="_blank" href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="" class="linkedin"><i class="fa fa-google"></i></a></li>
+                    </ul>
+                                               
+        </div>
+    </div>
+</div>
 <!-- WRAPPER -->
 <div class="wrapper">
 

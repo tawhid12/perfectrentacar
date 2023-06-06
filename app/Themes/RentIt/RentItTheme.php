@@ -315,7 +315,7 @@ Class RentItTheme extends Theme {
 			}
 		}, 20, 1 );
 
-		Eventy::addFilter( 'lr.menu', function ( $menu ) {
+		/*Eventy::addFilter( 'lr.menu', function ( $menu ) {
 			$text = '<li>
                                     <ul class="social-icons">';
 			$new_arr = '';
@@ -336,7 +336,7 @@ Class RentItTheme extends Theme {
                                 </li></ul>';
 
 			return str_replace_last( '</ul>', $text, $menu );
-		}, 20, 1 );
+		}, 20, 1 );*/
 
 
 	}

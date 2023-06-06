@@ -1,138 +1,12 @@
 <!-- PAGE -->
+
 <section class="page-section no-padding slider">
     <div class="container full-width">
 
         <div class="main-slider">
             <div class="owl-carousel" id="main-slider">
 
-                <!-- Slide 1 -->
-                <!--<div class="item slide1 ver1">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                <div class="div-cell">
-                                    <div class="caption-content">
-                                        <h2 class="caption-title">{{__('All Discounts Just For You')}}</h2>
-                                        <h3 class="caption-subtitle">{{__('Find Best Rental Car')}}</h3>-->
-                <!-- Search form -->
-                <!--<div class="row">
-                                            <div class="col-sm-12 col-md-10 col-md-offset-1">
 
-                                                <div class="form-search dark">
-                                                    <form action="{{ route('products.index') }}" method="get">
-                                                        <div class="form-title">
-                                                            <i class="fa fa-globe"></i>
-                                                            <h2>{{__('Search for Cheap Rental Cars Wherever Your Are')}}</h2>
-                                                        </div>
-
-                                                        <div class="row row-inputs">
-                                                            <div class="container-fluid">
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchUpLocation">{{__('Picking Up Location')}}</label>
-                                                                        <select name="PickingUpLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" id="formSearchUpLocation">
-                                                                            @if($locations ?? false)
-                                                                            @foreach($locations as $location)
-
-
-                                                                            <option <?php selected(old('PickingUpLocation', session('PickingUpLocation')), $location->alias); ?> value="{{$location->alias}}">{{$location->title}}</option>
-                                                                            @endforeach
-                                                                            @endif
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchUpDate">{{__('Picking Up Date')}}</label>
-                                                                        <input autocomplete="off" name="PickingUpDate" type="text" class="PickingUpDate form-control datepicker" id="formSearchUpDate" placeholder="dd/mm/yyyy" value="{{session('PickingUpDate')}}">
-                                                                        <span class="form-control-icon">
-                                                                            <i class="fa fa-calendar"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                        <label>{{__('Picking Up Hour')}}</label>
-
-                                                                        <select name="PickingUpHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-
-                                                                            <?php $times = rentit_get_times(); ?>
-                                                                            @if($times && is_array($times))
-                                                                            @foreach($times as $time)
-                                                                            <option <?php selected(old('PickingUpHour', session('PickingUpHour')), $time); ?> value="{{$time}}">{{$time}}</option>
-                                                                            @endforeach
-                                                                            @endif
-
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row row-inputs">
-                                                            <div class="container-fluid">
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchOffLocation">{{__('Dropping Off Location')}}</label>
-                                                                        <select id="formSearchOffLocation" name="DroppingOffLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                            @if($locations)
-                                                                            @foreach($locations as $location)
-
-                                                                            <option <?php selected(old('DroppingOffLocation', session('DroppingOffLocation')), $location->alias); ?> value="{{$location->alias}}">{{$location->title}}</option>
-
-                                                                            @endforeach
-                                                                            @endif
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchOffDate">{{__('Dropping Off Date')}}</label>
-                                                                        <input autocomplete="off" name="DroppingOffDate" type="text" class="form-control datepicker DroppingOffDate" id="formSearchOffDate" placeholder="dd/mm/yyyy" value="{{session('DroppingOffDate')}}">
-                                                                        <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-
-                                                                    <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                        <label>{{__("Dropping Off Hour")}}</label>
-                                                                        <select name="DroppingOffHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                            @if($times && is_array($times))
-                                                                            @foreach($times as $time)
-                                                                            <option <?php selected(old('DroppingOffHour', session('DroppingOffHour')), $time); ?> value="{{$time}}">{{$time}}</option>
-                                                                            @endforeach
-                                                                            @endif
-
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row row-submit">
-                                                            <div class="container-fluid">
-                                                                <div class="inner">
-                                                                    <i class="fa fa-plus-circle"></i>{{__(' ')}}
-                                                                    <button type="submit" id="formSearchSubmit" class="btn btn-submit btn-theme pull-right">{{__("Find Car")}}</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-                                        </div>-->
-                <!-- /Search form -->
-                <!--</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <!-- /Slide 1 -->
 
                 <!-- Slide 2 -->
                 <div class="item slide2 ver2">
@@ -141,122 +15,9 @@
                             <div class="div-table">
                                 <div class="div-cell">
                                     <div class="caption-content">
-                                        <!-- Search form -->
-                                        <div class="form-search light">
-                                            <form action="{{ route('products.index') }}" method="get">
-                                                <div class="form-title">
-                                                    <i class="fa fa-globe"></i>
-                                                    <h2>{{__("Search for Cheap Rental Cars Wherever Your Are")}}</h2>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpLocation2">{{__("Picking Up Location")}}</label>
-
-                                                                <select name="PickingUpLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" id="formSearchUpLocation2">
-                                                                    @if($locations ?? false)
-                                                                    @foreach($locations as $location)
-
-
-                                                                    <option <?php selected(old('PickingUpLocation', session('PickingUpLocation')), $location->alias); ?> value="{{$location->alias}}">{{$location->title}}</option>
-                                                                    @endforeach
-                                                                    @endif
-                                                                </select>
-                                                                <span class="form-control-icon">
-                                                                    <i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffLocation2">{{__("Dropping Off Location")}}</label>
-                                                                <select id="formSearchOffLocation2" name="DroppingOffLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    @if($locations)
-                                                                    @foreach($locations as $location)
-
-                                                                    <option <?php selected(old('DroppingOffLocation', session('DroppingOffLocation')), $location->alias); ?> value="{{$location->alias}}">{{$location->title}}</option>
-
-                                                                    @endforeach
-                                                                    @endif
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpDate2">{{__("Picking Up Date")}}</label>
-                                                                <input name="PickingUpDate" class="PickingUpDate form-control datepicker" id="formSearchUpDate2" placeholder="dd/mm/yyyy">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label>{{__("Picking Up Hour")}}</label>
-                                                                <select name="PickingUpHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-
-                                                                    <?php $times = rentit_get_times(); ?>
-                                                                    @if($times && is_array($times))
-                                                                    @foreach($times as $time)
-                                                                    <option <?php selected(old('PickingUpHour', session('PickingUpHour')), $time); ?> value="{{$time}}">{{$time}}</option>
-                                                                    @endforeach
-                                                                    @endif
-
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffDate2">{{__("Dropping Off Date")}}</label>
-                                                                <input autocomplete="off" name="DroppingOffDate" type="text" class="form-control datepicker DroppingOffDate" id="formSearchOffDate2" placeholder="dd/mm/yyyy" value="{{session('DroppingOffDate')}}">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label>{{__("Dropping Off Hour")}}</label>
-                                                                <select name="DroppingOffHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    @if($times && is_array($times))
-                                                                    @foreach($times as $time)
-                                                                    <option <?php selected(old('DroppingOffHour', session('DroppingOffHour')), $time); ?> value="{{$time}}">{{$time}}</option>
-                                                                    @endforeach
-                                                                    @endif
-
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-submit">
-                                                    <div class="container-fluid">
-                                                        <div class="inner">
-                                                            <i class="fa fa-plus-circle"></i>
-                                                            <button type="submit" id="formSearchSubmit2" class="btn btn-submit btn-theme ripple-effect pull-right">{{__("Find Car")}}</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- /Search form -->
-
                                         <h2 class="caption-subtitle">{{__('Find Your Car!')}}<br />{{__(" Rent A Car")}}</h2>
                                         <p class="caption-text">
-                                            Vivamus in est sit amet risus rutrum facilisis sed ut mauris. Aenean aliquam
-                                            ex ut sem aliquet, eget vestibulum erat pharetra. Maecenas vel urna nulla.
-                                            Mauris non risus pulvinar.
+                                           
                                         </p>
                                         <p class="caption-text">
                                             <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
@@ -276,114 +37,7 @@
                             <div class="div-table">
                                 <div class="div-cell">
                                     <div class="caption-content">
-                                        <!-- Search form -->
-                                        <div class="form-search light">
-                                            <form action="{{ route('products.index') }}" method="get">
-                                                <div class="form-title">
-                                                    <i class="fa fa-globe"></i>
-                                                    <h2>{{__("Search for Cheap Rental Cars Wherever Your Are")}}</h2>
-                                                </div>
 
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpLocation3">{{__("Picking Up Location")}}</label>
-                                                                <select name="PickingUpLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" id="formSearchUpLocation3">
-                                                                    @if($locations ?? false)
-                                                                    @foreach($locations as $location)
-
-
-                                                                    <option <?php selected(old('PickingUpLocation', session('PickingUpLocation')), $location->alias); ?> value="{{$location->alias}}">{{$location->title}}</option>
-                                                                    @endforeach
-                                                                    @endif
-                                                                </select>{{__(" ")}}<span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffLocation3">{{__("Dropping Off Location")}}</label>
-                                                                <select id="formSearchOffLocation3" name="DroppingOffLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    @if($locations)
-                                                                    @foreach($locations as $location)
-
-                                                                    <option <?php selected(old('DroppingOffLocation', session('DroppingOffLocation')), $location->alias); ?> value="{{$location->alias}}">{{$location->title}}</option>
-
-                                                                    @endforeach
-                                                                    @endif
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpDate3">{{__("Picking Up Date")}}</label>
-                                                                <input autocomplete="off" name="PickingUpDate" type="text" class="PickingUpDate form-control datepicker" id="formSearchUpDate3" placeholder="dd/mm/yyyy" value="{{session('PickingUpDate')}}">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label>{{__("Picking Up Hour")}}</label>
-                                                                <select name="PickingUpHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-
-                                                                    <?php $times = rentit_get_times(); ?>
-                                                                    @if($times && is_array($times))
-                                                                    @foreach($times as $time)
-                                                                    <option <?php selected(old('PickingUpHour', session('PickingUpHour')), $time); ?> value="{{$time}}">{{$time}}</option>
-                                                                    @endforeach
-                                                                    @endif
-
-                                                                </select>
-
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffDate3">{{__("Dropping Off Date")}}</label>
-                                                                <input type="text" class="form-control datepicker DroppingOffDate" id="formSearchOffDate3" placeholder="dd/mm/yyyy">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label>{{__("Dropping Off Hour")}}</label>
-                                                                <select name="DroppingOffHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    @if($times && is_array($times))
-                                                                    @foreach($times as $time)
-                                                                    <option <?php selected(old('DroppingOffHour', session('DroppingOffHour')), $time); ?> value="{{$time}}">{{$time}}</option>
-                                                                    @endforeach
-                                                                    @endif
-
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-submit">
-                                                    <div class="container-fluid">
-                                                        <div class="inner">
-                                                            <i class="fa fa-plus-circle"></i>{{__(" ")}}
-                                                            <button type="submit" id="formSearchSubmit3" class="btn btn-submit ripple-effect btn-theme pull-right">{{__("Find Car")}}</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- /Search form -->
 
                                         <h2 class="caption-title">{{__("For rental Cars")}}</h2>
                                         <h3 class="caption-subtitle">{{__("Best Deals")}}</h3>
@@ -400,7 +54,7 @@
                 <!-- /Slide 3 -->
 
                 <!-- Slide 4 -->
-                <div class="item slide4 ver4">
+                {{--<div class="item slide4 ver4">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
@@ -420,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>--}}
                 <!-- /Slide 4 -->
 
             </div>
@@ -429,36 +83,6 @@
     </div>
 </section>
 <!-- /PAGE -->
-<div class="container" style="margin-top:20px">
-    <div class="row">
-
-        <div class="col-sm-12">
-            <p class="btn-row text-center">
-
-                <?php
-                if (get_theme_mod('footer_enable_social_buttons', true)) {
-                    $all_arr = get_theme_mod('footer_social_buttons');
-                    $new_arr = [];
-                    if ($all_arr['url'] ?? false) {
-                        foreach ($all_arr['url'] as $k => $v) {
-                ?>
-                            <a target="_blank" href="{{ $all_arr['url'][$k] ?? '' }}" class="btn btn-theme btn-icon-left {{ $all_arr['type'][$k] ?? '' }}">
-                                <i class="fa {{ $all_arr['icon'][$k] ?? '' }}"></i>{{ $all_arr['text'][$k] ?? '' }}
-                            </a>
-
-                <?php
-
-                        }
-                    }
-                }
-                ?>
-
-            </p>
-
-        </div>
-
-    </div>
-</div>
 <!-- PAGE -->
 <section class="page-section">
     <div class="container">
@@ -1297,12 +921,7 @@ alt="Testimonial avatar">
     var
         mapObject,
         markers = [],
-        markersData = {
-            !!$markersData!!
-        }
-
-
-    };
+        markersData = {!!$markersData!!}};
 
 
     function initialize_map() {
@@ -1598,7 +1217,7 @@ alt="Testimonial avatar">
             </div>
             <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms">
 
-                <p>{{__(" At Perfect Line,Our customer��s satisfaction comes first,We provide mobility solutions that benefi")}}</p>
+                <p>{{__(" At Perfect Line,Our customer's satisfaction comes first,We provide mobility solutions that benefit")}}</p>
 
                 <ul class="media-list contact-list">
                     <li class="media">

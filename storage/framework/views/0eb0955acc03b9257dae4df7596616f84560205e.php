@@ -1,139 +1,12 @@
 <!-- PAGE -->
+
 <section class="page-section no-padding slider">
     <div class="container full-width">
 
         <div class="main-slider">
             <div class="owl-carousel" id="main-slider">
 
-                <!-- Slide 1 -->
-                <!--<div class="item slide1 ver1">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                <div class="div-cell">
-                                    <div class="caption-content">
-                                        <h2 class="caption-title"><?php echo e(__('All Discounts Just For You')); ?></h2>
-                                        <h3 class="caption-subtitle"><?php echo e(__('Find Best Rental Car')); ?></h3>-->
-                <!-- Search form -->
-                <!--<div class="row">
-                                            <div class="col-sm-12 col-md-10 col-md-offset-1">
 
-                                                <div class="form-search dark">
-                                                    <form action="<?php echo e(route('products.index')); ?>" method="get">
-                                                        <div class="form-title">
-                                                            <i class="fa fa-globe"></i>
-                                                            <h2><?php echo e(__('Search for Cheap Rental Cars Wherever Your Are')); ?></h2>
-                                                        </div>
-
-                                                        <div class="row row-inputs">
-                                                            <div class="container-fluid">
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchUpLocation"><?php echo e(__('Picking Up Location')); ?></label>
-                                                                        <select name="PickingUpLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" id="formSearchUpLocation">
-                                                                            <?php if($locations ?? false): ?>
-                                                                            <?php $__currentLoopData = $locations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $location): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-
-                                                                            <option <?php selected(old('PickingUpLocation', session('PickingUpLocation')), $location->alias); ?> value="<?php echo e($location->alias); ?>"><?php echo e($location->title); ?></option>
-                                                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                            <?php endif; ?>
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchUpDate"><?php echo e(__('Picking Up Date')); ?></label>
-                                                                        <input autocomplete="off" name="PickingUpDate" type="text" class="PickingUpDate form-control datepicker" id="formSearchUpDate" placeholder="dd/mm/yyyy" value="<?php echo e(session('PickingUpDate')); ?>">
-                                                                        <span class="form-control-icon">
-                                                                            <i class="fa fa-calendar"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                        <label><?php echo e(__('Picking Up Hour')); ?></label>
-
-                                                                        <select name="PickingUpHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-
-                                                                            <?php $times = rentit_get_times(); ?>
-                                                                            <?php if($times && is_array($times)): ?>
-                                                                            <?php $__currentLoopData = $times; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $time): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                            <option <?php selected(old('PickingUpHour', session('PickingUpHour')), $time); ?> value="<?php echo e($time); ?>"><?php echo e($time); ?></option>
-                                                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                            <?php endif; ?>
-
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row row-inputs">
-                                                            <div class="container-fluid">
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchOffLocation"><?php echo e(__('Dropping Off Location')); ?></label>
-                                                                        <select id="formSearchOffLocation" name="DroppingOffLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                            <?php if($locations): ?>
-                                                                            <?php $__currentLoopData = $locations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $location): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-                                                                            <option <?php selected(old('DroppingOffLocation', session('DroppingOffLocation')), $location->alias); ?> value="<?php echo e($location->alias); ?>"><?php echo e($location->title); ?></option>
-
-                                                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                            <?php endif; ?>
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-                                                                    <div class="form-group has-icon has-label">
-                                                                        <label for="formSearchOffDate"><?php echo e(__('Dropping Off Date')); ?></label>
-                                                                        <input autocomplete="off" name="DroppingOffDate" type="text" class="form-control datepicker DroppingOffDate" id="formSearchOffDate" placeholder="dd/mm/yyyy" value="<?php echo e(session('DroppingOffDate')); ?>">
-                                                                        <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-3">
-
-                                                                    <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                        <label><?php echo e(__("Dropping Off Hour")); ?></label>
-                                                                        <select name="DroppingOffHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                            <?php if($times && is_array($times)): ?>
-                                                                            <?php $__currentLoopData = $times; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $time): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                            <option <?php selected(old('DroppingOffHour', session('DroppingOffHour')), $time); ?> value="<?php echo e($time); ?>"><?php echo e($time); ?></option>
-                                                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                            <?php endif; ?>
-
-                                                                        </select>
-                                                                        <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row row-submit">
-                                                            <div class="container-fluid">
-                                                                <div class="inner">
-                                                                    <i class="fa fa-plus-circle"></i><?php echo e(__(' ')); ?>
-
-                                                                    <button type="submit" id="formSearchSubmit" class="btn btn-submit btn-theme pull-right"><?php echo e(__("Find Car")); ?></button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-
-                                            </div>
-                                        </div>-->
-                <!-- /Search form -->
-                <!--</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <!-- /Slide 1 -->
 
                 <!-- Slide 2 -->
                 <div class="item slide2 ver2">
@@ -142,122 +15,9 @@
                             <div class="div-table">
                                 <div class="div-cell">
                                     <div class="caption-content">
-                                        <!-- Search form -->
-                                        <div class="form-search light">
-                                            <form action="<?php echo e(route('products.index')); ?>" method="get">
-                                                <div class="form-title">
-                                                    <i class="fa fa-globe"></i>
-                                                    <h2><?php echo e(__("Search for Cheap Rental Cars Wherever Your Are")); ?></h2>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpLocation2"><?php echo e(__("Picking Up Location")); ?></label>
-
-                                                                <select name="PickingUpLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" id="formSearchUpLocation2">
-                                                                    <?php if($locations ?? false): ?>
-                                                                    <?php $__currentLoopData = $locations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $location): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-
-                                                                    <option <?php selected(old('PickingUpLocation', session('PickingUpLocation')), $location->alias); ?> value="<?php echo e($location->alias); ?>"><?php echo e($location->title); ?></option>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-                                                                </select>
-                                                                <span class="form-control-icon">
-                                                                    <i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffLocation2"><?php echo e(__("Dropping Off Location")); ?></label>
-                                                                <select id="formSearchOffLocation2" name="DroppingOffLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    <?php if($locations): ?>
-                                                                    <?php $__currentLoopData = $locations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $location): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-                                                                    <option <?php selected(old('DroppingOffLocation', session('DroppingOffLocation')), $location->alias); ?> value="<?php echo e($location->alias); ?>"><?php echo e($location->title); ?></option>
-
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpDate2"><?php echo e(__("Picking Up Date")); ?></label>
-                                                                <input name="PickingUpDate" class="PickingUpDate form-control datepicker" id="formSearchUpDate2" placeholder="dd/mm/yyyy">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label><?php echo e(__("Picking Up Hour")); ?></label>
-                                                                <select name="PickingUpHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-
-                                                                    <?php $times = rentit_get_times(); ?>
-                                                                    <?php if($times && is_array($times)): ?>
-                                                                    <?php $__currentLoopData = $times; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $time): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                    <option <?php selected(old('PickingUpHour', session('PickingUpHour')), $time); ?> value="<?php echo e($time); ?>"><?php echo e($time); ?></option>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffDate2"><?php echo e(__("Dropping Off Date")); ?></label>
-                                                                <input autocomplete="off" name="DroppingOffDate" type="text" class="form-control datepicker DroppingOffDate" id="formSearchOffDate2" placeholder="dd/mm/yyyy" value="<?php echo e(session('DroppingOffDate')); ?>">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label><?php echo e(__("Dropping Off Hour")); ?></label>
-                                                                <select name="DroppingOffHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    <?php if($times && is_array($times)): ?>
-                                                                    <?php $__currentLoopData = $times; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $time): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                    <option <?php selected(old('DroppingOffHour', session('DroppingOffHour')), $time); ?> value="<?php echo e($time); ?>"><?php echo e($time); ?></option>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-submit">
-                                                    <div class="container-fluid">
-                                                        <div class="inner">
-                                                            <i class="fa fa-plus-circle"></i>
-                                                            <button type="submit" id="formSearchSubmit2" class="btn btn-submit btn-theme ripple-effect pull-right"><?php echo e(__("Find Car")); ?></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- /Search form -->
-
                                         <h2 class="caption-subtitle"><?php echo e(__('Find Your Car!')); ?><br /><?php echo e(__(" Rent A Car")); ?></h2>
                                         <p class="caption-text">
-                                            Vivamus in est sit amet risus rutrum facilisis sed ut mauris. Aenean aliquam
-                                            ex ut sem aliquet, eget vestibulum erat pharetra. Maecenas vel urna nulla.
-                                            Mauris non risus pulvinar.
+                                           
                                         </p>
                                         <p class="caption-text">
                                             <a class="btn btn-theme ripple-effect btn-theme-md" href="#"><?php echo e(__("See All Vehicles")); ?></a>
@@ -277,115 +37,7 @@
                             <div class="div-table">
                                 <div class="div-cell">
                                     <div class="caption-content">
-                                        <!-- Search form -->
-                                        <div class="form-search light">
-                                            <form action="<?php echo e(route('products.index')); ?>" method="get">
-                                                <div class="form-title">
-                                                    <i class="fa fa-globe"></i>
-                                                    <h2><?php echo e(__("Search for Cheap Rental Cars Wherever Your Are")); ?></h2>
-                                                </div>
 
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpLocation3"><?php echo e(__("Picking Up Location")); ?></label>
-                                                                <select name="PickingUpLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" id="formSearchUpLocation3">
-                                                                    <?php if($locations ?? false): ?>
-                                                                    <?php $__currentLoopData = $locations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $location): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-
-                                                                    <option <?php selected(old('PickingUpLocation', session('PickingUpLocation')), $location->alias); ?> value="<?php echo e($location->alias); ?>"><?php echo e($location->title); ?></option>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-                                                                </select><?php echo e(__(" ")); ?><span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffLocation3"><?php echo e(__("Dropping Off Location")); ?></label>
-                                                                <select id="formSearchOffLocation3" name="DroppingOffLocation" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    <?php if($locations): ?>
-                                                                    <?php $__currentLoopData = $locations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $location): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
-                                                                    <option <?php selected(old('DroppingOffLocation', session('DroppingOffLocation')), $location->alias); ?> value="<?php echo e($location->alias); ?>"><?php echo e($location->title); ?></option>
-
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-map-marker"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchUpDate3"><?php echo e(__("Picking Up Date")); ?></label>
-                                                                <input autocomplete="off" name="PickingUpDate" type="text" class="PickingUpDate form-control datepicker" id="formSearchUpDate3" placeholder="dd/mm/yyyy" value="<?php echo e(session('PickingUpDate')); ?>">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label><?php echo e(__("Picking Up Hour")); ?></label>
-                                                                <select name="PickingUpHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-
-                                                                    <?php $times = rentit_get_times(); ?>
-                                                                    <?php if($times && is_array($times)): ?>
-                                                                    <?php $__currentLoopData = $times; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $time): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                    <option <?php selected(old('PickingUpHour', session('PickingUpHour')), $time); ?> value="<?php echo e($time); ?>"><?php echo e($time); ?></option>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-
-                                                                </select>
-
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-inputs">
-                                                    <div class="container-fluid">
-                                                        <div class="col-sm-7">
-                                                            <div class="form-group has-icon has-label">
-                                                                <label for="formSearchOffDate3"><?php echo e(__("Dropping Off Date")); ?></label>
-                                                                <input type="text" class="form-control datepicker DroppingOffDate" id="formSearchOffDate3" placeholder="dd/mm/yyyy">
-                                                                <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-5">
-                                                            <div class="form-group has-icon has-label selectpicker-wrapper">
-                                                                <label><?php echo e(__("Dropping Off Hour")); ?></label>
-                                                                <select name="DroppingOffHour" class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select">
-                                                                    <?php if($times && is_array($times)): ?>
-                                                                    <?php $__currentLoopData = $times; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $time): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                                    <option <?php selected(old('DroppingOffHour', session('DroppingOffHour')), $time); ?> value="<?php echo e($time); ?>"><?php echo e($time); ?></option>
-                                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                                    <?php endif; ?>
-
-                                                                </select>
-                                                                <span class="form-control-icon"><i class="fa fa-clock-o"></i></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row row-submit">
-                                                    <div class="container-fluid">
-                                                        <div class="inner">
-                                                            <i class="fa fa-plus-circle"></i><?php echo e(__(" ")); ?>
-
-                                                            <button type="submit" id="formSearchSubmit3" class="btn btn-submit ripple-effect btn-theme pull-right"><?php echo e(__("Find Car")); ?></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <!-- /Search form -->
 
                                         <h2 class="caption-title"><?php echo e(__("For rental Cars")); ?></h2>
                                         <h3 class="caption-subtitle"><?php echo e(__("Best Deals")); ?></h3>
@@ -402,27 +54,7 @@
                 <!-- /Slide 3 -->
 
                 <!-- Slide 4 -->
-                <div class="item slide4 ver4">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                <div class="div-cell">
-                                    <div class="caption-content">
-                                        <h2 class="caption-title"><?php echo e(__("For rental Cars")); ?></h2>
-                                        <h3 class="caption-subtitle"><span><?php echo e(__("Best Deals")); ?></span></h3>
-                                        <p class="caption-text">
-                                            Sales Up %45 Off<br />
-                                            All Rental Cars Start from 49$
-                                        </p>
-                                        <p class="caption-text">
-                                            <a class="btn btn-theme ripple-effect btn-theme-md" href="#"><?php echo e(__("See All Vehicles")); ?></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- /Slide 4 -->
 
             </div>
@@ -431,37 +63,6 @@
     </div>
 </section>
 <!-- /PAGE -->
-<div class="container" style="margin-top:20px">
-    <div class="row">
-
-        <div class="col-sm-12">
-            <p class="btn-row text-center">
-
-                <?php
-                if (get_theme_mod('footer_enable_social_buttons', true)) {
-                    $all_arr = get_theme_mod('footer_social_buttons');
-                    $new_arr = [];
-                    if ($all_arr['url'] ?? false) {
-                        foreach ($all_arr['url'] as $k => $v) {
-                ?>
-                            <a target="_blank" href="<?php echo e($all_arr['url'][$k] ?? ''); ?>" class="btn btn-theme btn-icon-left <?php echo e($all_arr['type'][$k] ?? ''); ?>">
-                                <i class="fa <?php echo e($all_arr['icon'][$k] ?? ''); ?>"></i><?php echo e($all_arr['text'][$k] ?? ''); ?>
-
-                            </a>
-
-                <?php
-
-                        }
-                    }
-                }
-                ?>
-
-            </p>
-
-        </div>
-
-    </div>
-</div>
 <!-- PAGE -->
 <section class="page-section">
     <div class="container">
@@ -1112,12 +713,7 @@
     var
         mapObject,
         markers = [],
-        markersData = {
-            !!$markersData!!
-        }
-
-
-    };
+        markersData = <?php echo $markersData; ?>};
 
 
     function initialize_map() {
@@ -1265,7 +861,7 @@
             </div>
             <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms">
 
-                <p><?php echo e(__(" At Perfect Line,Our customer��s satisfaction comes first,We provide mobility solutions that benefi")); ?></p>
+                <p><?php echo e(__(" At Perfect Line,Our customer's satisfaction comes first,We provide mobility solutions that benefit")); ?></p>
 
                 <ul class="media-list contact-list">
                     <li class="media">

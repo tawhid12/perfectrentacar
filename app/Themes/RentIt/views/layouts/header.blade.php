@@ -40,13 +40,13 @@
         .main-slider .ver3 .caption-subtitle{
             color:#000;
         }
-        #breadcrumbs__0 + section{
+        #breadcrumbs__0 + section.edit{
             background: url(rentit/assets/img/preview/contact-us-bg.png);
             background-size: cover;
             position: relative;
             z-index: 0;
         }
-        #breadcrumbs__0 + section::after{
+        #breadcrumbs__0 + section.edit::after{
             content:"";
             position: absolute;
             top: 0;

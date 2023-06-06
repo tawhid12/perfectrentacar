@@ -31,6 +31,8 @@
         }
         .page-section.contact{
             background: url(rentit/assets/img/preview/page-section-contact-2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .page-section.dark{
             color:#fff;
@@ -38,12 +40,13 @@
         .main-slider .ver3 .caption-subtitle{
             color:#000;
         }
-        .content-area-2{
+        #breadcrumbs__0 + section{
             background: url(rentit/assets/img/preview/contact-us-bg.png);
+            background-size: cover;
             position: relative;
             z-index: 0;
         }
-        .content-area-2::after{
+        #breadcrumbs__0 + section::after{
             content:"";
             position: absolute;
             top: 0;

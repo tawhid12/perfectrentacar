@@ -39,12 +39,13 @@
         .main-slider .ver3 .caption-subtitle{
             color:#000;
         }
-        .pb-module-section{
+        #breadcrumbs__0 + section{
             background: url(rentit/assets/img/preview/contact-us-bg.png);
+            background-size: cover;
             position: relative;
             z-index: 0;
         }
-        .pb-module-section::after{
+        #breadcrumbs__0 + section::after{
             content:"";
             position: absolute;
             top: 0;

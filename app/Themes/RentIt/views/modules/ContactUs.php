@@ -1,4 +1,3 @@
-<div class="content-area-2">
 <section id="<?php  echo $id; ?>" class="edit page-section color  pb-module-section">
 	<div class="edit container">
 
@@ -101,4 +100,3 @@
 
 	</div>
 </section>
-</div>

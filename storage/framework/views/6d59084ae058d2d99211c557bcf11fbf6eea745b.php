@@ -38,10 +38,12 @@
         .main-slider .ver3 .caption-subtitle{
             color:#000;
         }
-        .content-area{
+        .content-area-2{
             background: url(rentit/assets/img/preview/contact-us-bg.png);
+            position: relative;
+            z-index: 0;
         }
-        .content-area::after{
+        .content-area-2::after{
             content:"";
             position: absolute;
             top: 0;

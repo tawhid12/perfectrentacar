@@ -241,7 +241,7 @@
 <!-- /PAGE -->
 
 <!-- PAGE -->
-<section class="page-section">
+{{--<section class="page-section">
     <div class="container">
 
         <h2 class="section-title wow fadeInUp" data-wow-offset="70" data-wow-delay="100ms">
@@ -347,7 +347,7 @@
 
 
     </div>
-</section>
+</section>--}}
 <!-- /PAGE -->
 
 <!-- PAGE -->
@@ -1229,7 +1229,7 @@ alt="Testimonial avatar">
                         <div class="media-body">{{__("Tel: +971 4 326 7557")}}</div>
                     </li>
                     <li class="media">
-                        <div class="media-left"><i class="fa fa-phone"></i></div>
+                        <div class="media-left"><i class="fa fa-whatsapp"></i></div>
                         <div class="media-body">{{__("Whatsapp: +971 54 495 7070")}}</div>
                     </li>
                     <li class="media">

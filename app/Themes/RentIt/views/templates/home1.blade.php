@@ -1222,15 +1222,15 @@ alt="Testimonial avatar">
                 <ul class="media-list contact-list">
                     <li class="media">
                         <div class="media-left"><i class="fa fa-home"></i></div>
-                        <div class="media-body">{{__("Adress: Dubai")}}</div>
-                    </li>
-                    <li class="media">
-                        <div class="media-left"><i class="fa fa"></i></div>
-                        <div class="media-body">{{__("")}}</div>
+                        <div class="media-body">{{__("Adress: Adress: Shop No. 06, Wasl Duet - 02 , Al Karama , Dubai , U.A.E")}}</div>
                     </li>
                     <li class="media">
                         <div class="media-left"><i class="fa fa-phone"></i></div>
-                        <div class="media-body">{{__("Support Phone: +971 54 495 7070")}}</div>
+                        <div class="media-body">{{__("Tel: +971 4 326 7557")}}</div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left"><i class="fa fa-phone"></i></div>
+                        <div class="media-body">{{__("Whatsapp: +971 54 495 7070")}}</div>
                     </li>
                     <li class="media">
                         <div class="media-left"><i class="fa fa-envelope"></i></div>

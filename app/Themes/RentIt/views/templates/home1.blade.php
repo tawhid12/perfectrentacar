@@ -274,7 +274,7 @@
 
                         <div class="swiper-wrapper">
 
-                            <!-- Slides -->
+                         
 
                             @if($item->products)
                             @foreach($item->products as $product)

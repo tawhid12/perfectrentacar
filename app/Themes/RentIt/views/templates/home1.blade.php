@@ -16,69 +16,69 @@
                                 <div class="div-cell">
                                     {{--<div class="caption-content">
                                         <h2 class="caption-subtitle">{{__('Find Your Car!')}}<br />{{__(" Rent A Car")}}</h2>
-                                        <p class="caption-text">
-                                           
-                                        </p>
-                                        <p class="caption-text">
-                                            <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
-                                        </p>
-                                    </div>--}}
-                                </div>
+                                    <p class="caption-text">
+
+                                    </p>
+                                    <p class="caption-text">
+                                        <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
+                                    </p>
+                                </div>--}}
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /Slide 2 -->
+            </div>
+            <!-- /Slide 2 -->
 
-                <!-- Slide 3 -->
-                <div class="item slide3 ver3">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                <div class="div-cell">
-                                    {{--<div class="caption-content">
+            <!-- Slide 3 -->
+            <div class="item slide3 ver3">
+                <div class="caption">
+                    <div class="container">
+                        <div class="div-table">
+                            <div class="div-cell">
+                                {{--<div class="caption-content">
 
 
                                         <h2 class="caption-title">{{__("For rental Cars")}}</h2>
-                                        <h3 class="caption-subtitle">{{__("Best Deals")}}</h3>
-                                        <p class="caption-text">
-                                            Sales Up %45 Off<br />
-                                            All Rental Cars Start from 49$
-                                        </p>
-                                    </div>--}}
-                                </div>
-                            </div>
+                                <h3 class="caption-subtitle">{{__("Best Deals")}}</h3>
+                                <p class="caption-text">
+                                    Sales Up %45 Off<br />
+                                    All Rental Cars Start from 49$
+                                </p>
+                            </div>--}}
                         </div>
                     </div>
                 </div>
-                <!-- /Slide 3 -->
+            </div>
+        </div>
+        <!-- /Slide 3 -->
 
-                <!-- Slide 4 -->
-                {{--<div class="item slide4 ver4">
+        <!-- Slide 4 -->
+        {{--<div class="item slide4 ver4">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
                                 <div class="div-cell">
                                     <div class="caption-content">
                                         <h2 class="caption-title">{{__("For rental Cars")}}</h2>
-                                        <h3 class="caption-subtitle"><span>{{__("Best Deals")}}</span></h3>
-                                        <p class="caption-text">
-                                            Sales Up %45 Off<br />
-                                            All Rental Cars Start from 49$
-                                        </p>
-                                        <p class="caption-text">
-                                            <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>--}}
-                <!-- /Slide 4 -->
+        <h3 class="caption-subtitle"><span>{{__("Best Deals")}}</span></h3>
+        <p class="caption-text">
+            Sales Up %45 Off<br />
+            All Rental Cars Start from 49$
+        </p>
+        <p class="caption-text">
+            <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
+        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>--}}
+    <!-- /Slide 4 -->
 
-            </div>
-        </div>
+    </div>
+    </div>
 
     </div>
 </section>
@@ -264,8 +264,8 @@ alt="Testimonial avatar">
     <div class="container">
 
         <h2 class="section-title wow fadeInUp" data-wow-offset="70" data-wow-delay="500ms">
-            <small>{{__("Select What You Want")}}</small>
-            <span>{{__("Our awesome Rental Fleet cars")}}</span>
+            <!-- <small>{{__("Select What You Want")}}</small> -->
+            <span>{{__("Our Fleet")}}</span>
         </h2>
 
         @if($terms)
@@ -415,7 +415,7 @@ alt="Testimonial avatar">
                                                 <div class="car-details">
                                                     <div class="price">
                                                         <strong>{{$product->price}}</strong>{{__(" ")}}
-                                                        <span>{{__("$/per a day ")}}</span><i class="fa fa-info-circle"></i>
+                                                        <span>{{__("AED/per a day ")}}</span><i class="fa fa-info-circle"></i>
                                                     </div>
                                                     <div class="list">
                                                         <ul>
@@ -733,7 +733,10 @@ alt="Testimonial avatar">
     var
         mapObject,
         markers = [],
-        markersData = {!!$markersData!!}};
+        markersData = {
+            !!$markersData!!
+        }
+    };
 
 
     function initialize_map() {
@@ -871,22 +874,24 @@ alt="Testimonial avatar">
                 <table class="table table-striped text-center">
                     <thead>
                         <tr>
+                            <th class="text-center">Friday</th>
+                            <th class="text-center">Saturday</th>
                             <th class="text-center">Sunday</th>
                             <th class="text-center">Monday</th>
                             <th class="text-center">Tuesday</th>
                             <th class="text-center">Wednesday</th>
                             <th class="text-center">Thursday</th>
-                            <th class="text-center">Saturday</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>8:30 AM - 9:00 PM</td>
-                            <td>9:00 AM - 10:00 PM</td>
+                            <td>8:30 AM - 12:00 PM, 2-10 PM </td>
+                            <td>8:30 AM - 10:00 PM </td>
                             <td>8:30 AM - 10:00 PM</td>
-                            <td>9:00 AM - 10:00 PM</td>
-                            <td>9:00 AM - 10:00 PM</td>
-                            <td>9:00 AM - 10:00 PM </td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
                         </tr>
                     </tbody>
                 </table>

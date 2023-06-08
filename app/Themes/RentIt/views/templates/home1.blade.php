@@ -84,7 +84,7 @@
 </section>
 <!-- /PAGE -->
 <!-- PAGE -->
-<section class="page-section">
+<!--<section class="page-section">
     <div class="container">
 
         <div class="row">
@@ -200,7 +200,7 @@
         </div>
 
     </div>
-</section>
+</section>-->
 <!-- /PAGE -->
 
 <!-- PAGE -->

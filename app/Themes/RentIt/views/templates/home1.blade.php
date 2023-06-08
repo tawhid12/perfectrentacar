@@ -962,7 +962,32 @@ alt="Testimonial avatar">
     </div>
 </section>
 <!-- /PAGE -->
-
+<div class="col-md-12">
+                <h2 class="caption-title text-center" style="margin-bottom:20px;">{{__("Office Working Hours")}}</h2>
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Sunday</th>
+                            <th class="text-center">Monday</th>
+                            <th class="text-center">Tuesday</th>
+                            <th class="text-center">Wednesday</th>
+                            <th class="text-center">Thursday</th>
+                            <th class="text-center">Saturday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:30 AM - 9:00 PM</td>
+                            <td>9:00 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>9:00 AM - 10:00 PM</td>
+                            <td>9:00 AM - 10:00 PM</td>
+                            <td>9:00 AM - 10:00 PM </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 <!-- PAGE -->
 <section class="page-section contact dark">
     <div class="container">

@@ -203,42 +203,7 @@
 </section>-->
 <!-- /PAGE -->
 
-<!-- PAGE -->
-<section class="page-section dark">
-    <div class="container">
 
-        <div class="row">
-            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="100ms">
-                <h2 class="section-title text-left">
-
-                    <small>{{__("What Do You Know About Us")}}</small>
-                    <span>{{__('Who We Are ?')}}</span>
-                </h2>
-                <p>{{__("This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. ")}}</p>
-                <ul class="list-icons">
-                    <li>
-                        <i class="fa fa-check-circle"></i>{{__("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")}}
-                    </li>
-                    <li><i class="fa fa-check-circle"></i>{{__("Proin tempus sapien non iaculis pretium.")}}</li>
-                </ul>
-                <p class="btn-row">
-                    <a href="#" class="btn btn-theme ripple-effect btn-theme-md">{{__("See All Vehicles")}}</a>
-                    <a href="#" class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">{{__("Reservation Now")}}</a>
-                </p>
-            </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="owl-carousel img-carousel">
-                    <div class="item"><a href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                    <div class="item"><a href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                    <div class="item"><a href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                    <div class="item"><a href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
 
 
 
@@ -527,52 +492,7 @@ alt="Testimonial avatar">
 </section>
 <!-- /PAGE -->
 
-<!-- PAGE -->
-<section class="page-section image">
-    <div class="container">
 
-        <div class="row">
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-heart"></i></div>
-                        <div class="caption-number">{{__("5657")}}</div>
-                        <h4 class="caption-title">{{__("Happy costumers")}}</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="200ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-car"></i></div>
-                        <div class="caption-number">{{__("657")}}</div>
-                        <h4 class="caption-title">{{__("Total car count")}}</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-flag"></i></div>
-                        <div class="caption-number">{{__("1.255.657")}}</div>
-                        <h4 class="caption-title">Total KM/MIL</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="400ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-comments-o"></i></div>
-                        <div class="caption-number">{{__("1255")}}</div>
-                        <h4 class="caption-title">{{__("Call Center Solutions")}}</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
 
 <!-- PAGE -->
 {{--<section class="page-section">

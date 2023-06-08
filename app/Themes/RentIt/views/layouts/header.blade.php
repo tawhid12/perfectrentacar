@@ -69,6 +69,15 @@
         .media-body a{
             color:#fff;
         }
+
+        /*Nav */
+        .sf-menu.nav>li>a:focus, .sf-menu.nav>li>a:hover{
+            background:#e60000;
+        }
+        .nav {
+            background:#fff;
+        }
+
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

@@ -12,118 +12,30 @@
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
-                                <div class="div-cell">
-                                    {{--<div class="caption-content">
-                                        <h2 class="caption-subtitle">{{__('Find Your Car!')}}<br />{{__(" Rent A Car")}}</h2>
-                                    <p class="caption-text">
-
-                                    </p>
-                                    <p class="caption-text">
-                                        <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
-                                    </p>
-                                </div>--}}
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-           
-            <!-- /Slide 2 -->
+            
+            <!-- /Slide 1 -->
 
-                <!-- Slide 2 -->
-                <div class="item slide2 ver2">
+                            <!-- Slide 2 -->
+                            <div class="item slide2 ver2">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
-                                <div class="div-cell">
-                                    {{--<div class="caption-content">
-                                        <h2 class="caption-subtitle">{{__('Find Your Car!')}}<br />{{__(" Rent A Car")}}</h2>
-                                    <p class="caption-text">
-
-                                    </p>
-                                    <p class="caption-text">
-                                        <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
-                                    </p>
-                                </div>--}}
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-           
-            <!-- /Slide 2 -->
-
-            <!-- Slide 3 -->
-            <div class="item slide3 ver3">
-                <div class="caption">
-                    <div class="container">
-                        <div class="div-table">
-                            <div class="div-cell">
-                                {{--<div class="caption-content">
-
-
-                                        <h2 class="caption-title">{{__("For rental Cars")}}</h2>
-                                <h3 class="caption-subtitle">{{__("Best Deals")}}</h3>
-                                <p class="caption-text">
-                                    Sales Up %45 Off<br />
-                                    All Rental Cars Start from 49$
-                                </p>
-                            </div>--}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Slide 3 -->
-
-                    <!-- Slide 4 -->
-                    <div class="item slide4 ver4">
-                <div class="caption">
-                    <div class="container">
-                        <div class="div-table">
-                            <div class="div-cell">
-                                {{--<div class="caption-content">
-
-
-                                        <h2 class="caption-title">{{__("For rental Cars")}}</h2>
-                                <h3 class="caption-subtitle">{{__("Best Deals")}}</h3>
-                                <p class="caption-text">
-                                    Sales Up %45 Off<br />
-                                    All Rental Cars Start from 49$
-                                </p>
-                            </div>--}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Slide 4 -->
-
-                            <!-- Slide 5 -->
-                            <div class="item slide5 ver5">
-                <div class="caption">
-                    <div class="container">
-                        <div class="div-table">
-                            <div class="div-cell">
-                                {{--<div class="caption-content">
-
-
-                                        <h2 class="caption-title">{{__("For rental Cars")}}</h2>
-                                <h3 class="caption-subtitle">{{__("Best Deals")}}</h3>
-                                <p class="caption-text">
-                                    Sales Up %45 Off<br />
-                                    All Rental Cars Start from 49$
-                                </p>
-                            </div>--}}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Slide 5 -->
+            
+            <!-- /Slide 1 -->
 
 
 
-    </div>
-    </div>
+    </div><!--owl Carosuel-->
 
     </div>
     </div>

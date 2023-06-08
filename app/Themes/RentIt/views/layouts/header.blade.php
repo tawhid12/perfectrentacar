@@ -81,7 +81,9 @@
             background:#e60000;
             border: solid 1px #e60000;
         }
-
+        .main-slider .ver2:before {
+            background:none;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

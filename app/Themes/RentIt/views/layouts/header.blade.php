@@ -22,11 +22,20 @@
         .social-icons li {
             padding: 0px 10px 0 0;
         }
+        .main-slider .slide1{
+            background-image: url(rentit/assets/img/preview/slider/slide-1.jpg);
+        }
         .main-slider .slide2{
-            background-image: url(rentit/assets/img/preview/slider/slide-1.png);
+            background-image: url(rentit/assets/img/preview/slider/slide-2.jpg);
         }
         .main-slider .slide3{
-            background-image: url(rentit/assets/img/preview/slider/slide-2.png);
+            background-image: url(rentit/assets/img/preview/slider/slide-3.jpg);
+        }
+        .main-slider .slide4{
+            background-image: url(rentit/assets/img/preview/slider/slide-4.jpg);
+        }
+        .main-slider .slide5{
+            background-image: url(rentit/assets/img/preview/slider/slide-5.jpg);
         }
         .page-section.contact{
             background: url(rentit/assets/img/preview/page-section-contact-2.png);

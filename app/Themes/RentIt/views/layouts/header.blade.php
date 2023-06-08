@@ -100,6 +100,7 @@
                         <li><a target="_blank" href="https://api.whatsapp.com/send?phone=971544957070" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
                         <!-- <li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
                         <li><a target="_blank" href="" class="linkedin"><i class="fa fa-google"></i></a></li> -->
+                        <li><a target="_blank" href="https://goo.gl/maps/QBc2b78dDcfdgNeV6" class="linkedin"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
                     </ul>
                                                
         </div>

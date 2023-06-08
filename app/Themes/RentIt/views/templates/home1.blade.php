@@ -14,7 +14,7 @@
                         <div class="container">
                             <div class="div-table">
                                 <div class="div-cell">
-                                    <div class="caption-content">
+                                    {{--<div class="caption-content">
                                         <h2 class="caption-subtitle">{{__('Find Your Car!')}}<br />{{__(" Rent A Car")}}</h2>
                                         <p class="caption-text">
                                            
@@ -22,7 +22,7 @@
                                         <p class="caption-text">
                                             <a class="btn btn-theme ripple-effect btn-theme-md" href="#">{{__("See All Vehicles")}}</a>
                                         </p>
-                                    </div>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                         <div class="container">
                             <div class="div-table">
                                 <div class="div-cell">
-                                    <div class="caption-content">
+                                    {{--<div class="caption-content">
 
 
                                         <h2 class="caption-title">{{__("For rental Cars")}}</h2>
@@ -45,7 +45,7 @@
                                             Sales Up %45 Off<br />
                                             All Rental Cars Start from 49$
                                         </p>
-                                    </div>
+                                    </div>--}}
                                 </div>
                             </div>
                         </div>

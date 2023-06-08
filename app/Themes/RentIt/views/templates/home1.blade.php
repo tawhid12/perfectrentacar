@@ -962,7 +962,7 @@ alt="Testimonial avatar">
     </div>
 </section>
 <!-- /PAGE -->
-<section class="page-section">
+<section style="padding:40px 0px">
     <div class="container">
 
         <div class="row">

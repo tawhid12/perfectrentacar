@@ -79,6 +79,7 @@
         }
         .social-icons a:hover{
             background:#e60000;
+            border: solid 1px #e60000;
         }
 
     </style>

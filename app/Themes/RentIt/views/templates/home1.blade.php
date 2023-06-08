@@ -962,7 +962,12 @@ alt="Testimonial avatar">
     </div>
 </section>
 <!-- /PAGE -->
-<div class="col-md-12">
+<section class="page-section">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
                 <h2 class="caption-title text-center" style="margin-bottom:20px;">{{__("Office Working Hours")}}</h2>
                 <table class="table table-striped text-center">
                     <thead>
@@ -988,6 +993,11 @@ alt="Testimonial avatar">
                 </table>
             </div>
         </div>
+
+    </div>
+</section>
+<!-- /PAGE -->
+
 <!-- PAGE -->
 <section class="page-section contact dark">
     <div class="container">

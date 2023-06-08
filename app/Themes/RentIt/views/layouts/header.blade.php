@@ -77,6 +77,9 @@
         .nav {
             background:#fff;
         }
+        .social-icons a:hover{
+            background:#e60000;
+        }
 
     </style>
 </head>

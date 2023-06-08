@@ -8,7 +8,7 @@
 
 
                 <!-- Slide 1 -->
-                <div class="item slide1 ver2">
+                <div class="item slide1 ver1">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">

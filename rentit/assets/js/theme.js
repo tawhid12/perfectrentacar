@@ -182,12 +182,13 @@ jQuery(document).ready(function () {
         if (mainSlider.length) {
             mainSlider.owlCarousel({
                 //items: 1,
-                autoplay: false,
+                autoplay: true,
+                autoplayTimeout:1000,
                 autoplayHoverPause: true,
                 loop: true,
                 margin: 0,
-                dots: true,
-                nav: true,
+                dots: false,
+                nav: false,
                 navText: [
                     "<i class='fa fa-angle-left'></i>",
                     "<i class='fa fa-angle-right'></i>"

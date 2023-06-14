@@ -115,7 +115,7 @@
 @endif
 <div class="container">
     <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6" style="display:flex;align-items: center;">
     
     <span style="font-weight:bold;font-size:12px;color:#000;">Whatsapp: +971 54 495 7070</span>
     </div>

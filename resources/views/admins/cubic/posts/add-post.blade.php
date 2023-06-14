@@ -185,7 +185,7 @@
                                         </div> -->
 
 
-                                        <div class="">
+                                        <!--<div class="">
                                             <div class="form-group">
                                                 <label class="control-label"><strong> {{__('admin.Status')}}</strong></label>
                                                 <div class="radio-list">
@@ -208,7 +208,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>-->
                                         <!--/span-->
                                     </div>
                                     <div class="">

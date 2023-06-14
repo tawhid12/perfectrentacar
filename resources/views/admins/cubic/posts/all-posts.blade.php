@@ -47,11 +47,6 @@
                                 <thead>
                                 <tr>
                                     <th>{{__('admin.Title')}}</th>
-                                    <th>{{__('admin.Categories')}}</th>
-                                    <th>{{__('admin.Author')}}
-                                    </th>
-                                    <th> {{__('admin.Tags')}}</th>
-                                    <th><i class="ti-comment-alt"></i></th>
                                     <th>{{__('admin.Date')}}</th>
                                     <th>{{__('admin.Status')}}</th>
                                     <th>{{__('admin.Actions')}}</th>

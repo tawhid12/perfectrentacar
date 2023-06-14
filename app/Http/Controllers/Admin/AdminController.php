@@ -229,7 +229,7 @@ class AdminController extends CMSController {
 				]
 
 			]
-		);
+		);*/
 
 
 		$baseCms->addBackendMenu( [
@@ -271,7 +271,7 @@ class AdminController extends CMSController {
 
 
 
-		$baseCms->addBackendMenu( [
+		/*$baseCms->addBackendMenu( [
 
 				'name' => __( 'admin.Plugins' ),
 				'slug' => 'plugins',

@@ -887,7 +887,7 @@ alt="Testimonial avatar">
                         <div class="media-left"><i class="fa fa-envelope"></i></div>
                         <div class="media-body">{{__("E mails: perfectlinerac@yahoo.com")}}</div>
                     </li>
-                    <li class="media">
+                      <li class="media">
                         <div class="media-left"><i class="fa fa-home"></i></div>
                         <div class="media-body">{{__("Adress: Adress: Shop No. 06, Wasl Duet - 02 , Al Karama , Dubai , U.A.E")}}</div>
                     </li>

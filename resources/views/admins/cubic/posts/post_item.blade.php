@@ -9,14 +9,14 @@
 
             {{$post->title}}</a>
     </td>
-    <td>{{$post->category->title ?? ''}}</td>
+    {{--<td>{{$post->category->title ?? ''}}</td>
     <td>
         {{--<img src="http://lararent.test/cubic/plugins/images/users/hanna.jpg" alt="iMac"--}}
         {{--width="80">--}}
         {{----}}
         {{$post->user->name}}
     </td>
-    <td>....</td>
+    <td>....</td>--}}
     <td>0</td>
     <td>{{$post->created_at->format('d-m-Y') ?? ''}}</td>
     <td><span class="label label-success font-weight-100">{{__('admin.Published')}}</span></td>

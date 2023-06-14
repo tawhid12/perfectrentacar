@@ -93,6 +93,9 @@
         .main-slider .ver2:before {
             background:none;
         }
+        .sf-menu a{
+            color:#000;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">
@@ -115,7 +118,7 @@
 @endif
 <div class="container">
     <div class="row">
-        <div class="col-md-6" style="display:flex;justify-content: end;align-items: center;">
+        <div class="col-md-12" style="display:flex;justify-content: end;align-items: center;">
         <span style="font-weight:bold;font-size:12px;color:#000;">Whatsapp: +971 54 495 7070</span>
                
                     <ul class="social-icons">

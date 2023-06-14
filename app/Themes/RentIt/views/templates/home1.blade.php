@@ -664,19 +664,6 @@ alt="Testimonial avatar">
 </section>-->
 <!-- /PAGE -->
 
-<!-- PAGE -->
-{{--<section class="page-section no-padding no-bottom-space-off">
-    <div class="container full-width">
-
-        <!-- Google map -->
-        <div class="google-map">
-            <div id="map-canvas"></div>
-        </div>
-        <!-- /Google map -->
-        
-
-    </div>
-</section>--}}
 
 
 <!-- /PAGE -->

@@ -116,7 +116,10 @@
 <div class="container">
     <div class="row">
     <div class="col-md-6" style="display:flex;justify-content: end;align-items: center;">
-    <span>Whatsapp: +971 54 495 7070</span>
+    <ul class="social-icons">
+    <li><a href="#" class="facebook">Whatsapp: +971 54 495 7070</li>
+    </ul>
+
     </div>
         <div class="col-md-6" style="display:flex;justify-content: end;align-items: center;">
      

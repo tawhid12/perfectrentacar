@@ -9,7 +9,7 @@
                 @php $sliders = \DB::table('posts')->get(); @endphp
                 @forelse($sliders as $key => $post)
                                 <!-- Slide 1 -->
-                                <div class="item ver{{$key}}" style="background-image:url('{{ the_image_url($post->img,'thumbnail-870x600') }}')">
+                                <div class="item style="background-image:url('{{ the_image_url($post->img,'thumbnail-870x600') }}')">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">

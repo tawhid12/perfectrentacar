@@ -99,7 +99,7 @@ class AdminController extends CMSController {
 		);
 		$baseCms->addBackendMenu( [
 
-				'name' => __( 'admin.Posts' ),
+				'name' => 'Sliders',
 				'label' => '',
 				'url' => '',
 				'icon' => 'icon-screen-desktop',

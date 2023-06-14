@@ -97,7 +97,7 @@ class AdminController extends CMSController {
 
 			]
 		);
-		/*$baseCms->addBackendMenu( [
+		$baseCms->addBackendMenu( [
 
 				'name' => __( 'admin.Posts' ),
 				'label' => '',
@@ -107,16 +107,16 @@ class AdminController extends CMSController {
 				'order' => 2,
 				'sideMenu' => [
 					[
-						'name' => __( 'admin.All post' ),
+						'name' => 'All Sliders',
 						'url' => route( 'admin.posts.index' ),
 						'permissions' => 'VIEW_ADMIN_POSTS'
 					],
 					[
-						'name' => __( 'admin.add-new' ),
+						'name' => 'Add New Slider',
 						'url' => route( 'admin.posts.create' ),
 						'permissions' => 'ADD_POSTS'
 					],
-					[
+					/*[
 						'name' => __( 'admin.Categories' ),
 						'url' => route( 'admin.categories.index' ),
 						'permissions' =>  ['ADD_CATEGORY','VIEW_CATEGORY']
@@ -125,11 +125,11 @@ class AdminController extends CMSController {
 						'name' => __( 'admin.Tags' ),
 						'url' => route( 'admin.post_tag.index' ),
 						'permissions' =>  ['ADD_CATEGORY','VIEW_CATEGORY']
-					],
+					],*/
 				]
 
 			]
-		);*/
+		);
 		$baseCms->addBackendMenu( [
 
 				'name' => __( 'admin.Pages' ),

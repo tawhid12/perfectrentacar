@@ -5,10 +5,11 @@
 
         <div class="main-slider">
             <div class="owl-carousel" id="main-slider">
-
-
-                <!-- Slide 1 -->
-                <div class="item slide1 ver1">
+               
+                @php $sliders = \DB::table('posts')->get(); @endphp
+                @forelse($sliders as $key => $post)
+                                <!-- Slide 1 -->
+                                <div class="item ver{{$key}}" style="background-image:url('{{ the_image_url($post->img,'thumbnail-870x600') }}')">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
@@ -17,60 +18,11 @@
                         </div>
                     </div>
                 </div>
-            
-            <!-- /Slide 1 -->
+                @empty
+                @endforelse
 
-                            <!-- Slide 2 -->
-                            <div class="item slide2 ver2">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
             
-            <!-- /Slide 2 -->
-
-            <!-- Slide 3 -->
-            <div class="item slide3 ver3">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            <!-- /Slide 3 -->
-
-                      <!-- Slide 4 -->
-                      <div class="item slide4 ver4">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            <!-- /Slide 4 -->
-
-             <!-- Slide 5 -->
-             <div class="item slide5 ver5">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            <!-- /Slide 5 -->
+           
 
 
 

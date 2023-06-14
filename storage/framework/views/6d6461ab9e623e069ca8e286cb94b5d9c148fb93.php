@@ -9,48 +9,49 @@
         <div class="col-md-12">
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    {{  (isset($post->id)) ? 'Edit Slide' : 'Add Slide'}}
+                    <?php echo e((isset($post->id)) ? 'Edit Slide' : 'Add Slide'); ?>
+
 
                 </div>
                 <div class="panel-wrapper collapse in" aria-expanded="true">
                     <div class="panel-body">
 
                         <form method="post"
-                              action="{{  (isset($post->id)) ? route('admin.posts.update',['posts'=>$post->id]) : route('admin.posts.store')  }}">
+                              action="<?php echo e((isset($post->id)) ? route('admin.posts.update',['posts'=>$post->id]) : route('admin.posts.store')); ?>">
 
-                            @if(isset($post->id))
+                            <?php if(isset($post->id)): ?>
                                 <input type="hidden" name="_method" value="PUT">
 
-                            @endif
+                            <?php endif; ?>
 
                             <div class="form-body">
 
-                                @if (count($errors) > 0)
+                                <?php if(count($errors) > 0): ?>
 
                                     <div class="row">
                                         <div class="col-md-12">
-                                            @foreach ($errors->all() as $error)
-                                                <div class="alert alert-danger">{{ $error }}</div>
-                                            @endforeach
+                                            <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                <div class="alert alert-danger"><?php echo e($error); ?></div>
+                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
                                         </div>
 
                                     </div>
-                                @endif
+                                <?php endif; ?>
 
-                                @if (session('status'))
+                                <?php if(session('status')): ?>
                                     <div class="row">
                                         <div class="col-md-12">
 
 
-                                            <div class=" alert alert-success">{{ session('status') }}</div>
+                                            <div class=" alert alert-success"><?php echo e(session('status')); ?></div>
 
 
                                         </div>
                                     </div>
 
 
-                                @endif
+                                <?php endif; ?>
 
                                 <div class="col-md-9">
                                     <h3 class="box-title">Slide Details</h3>
@@ -62,26 +63,27 @@
                                                 <input type="text" id="firstName" class="form-control"
                                                        name="title" placeholder="Slide Name"
 
-                                                       value="{{  old('title', isset($post->title) ? $post->title : '' )  }}"
+                                                       value="<?php echo e(old('title', isset($post->title) ? $post->title : '' )); ?>"
                                                 ></div>
                                         </div>
                                         <!--/span-->
                                         <!-- <div class="col-md-6">
                                             <div class="">
-                                                <label class="control-label"> {{__('admin.Permalink:')}}
+                                                <label class="control-label"> <?php echo e(__('admin.Permalink:')); ?>
 
-                                                    @if(isset($post->id))
+
+                                                    <?php if(isset($post->id)): ?>
 
                                                         <a class="" target="_blank"
-                                                           href="{{ route('posts.show',['alias' => $post->alias])}}">{{ route('posts.show',['alias' => $post->alias])}}</a>
+                                                           href="<?php echo e(route('posts.show',['alias' => $post->alias])); ?>"><?php echo e(route('posts.show',['alias' => $post->alias])); ?></a>
 
-                                                    @endif
+                                                    <?php endif; ?>
                                                 </label>
 
                                             </div>
                                             <input name="alias" type="text" id="alias" class="form-control"
                                                    placeholder=""
-                                                   value="{{  old('alias', isset($post->alias) ? $post->alias : '' )  }}"
+                                                   value="<?php echo e(old('alias', isset($post->alias) ? $post->alias : '' )); ?>"
 
                                             ></div> -->
 
@@ -89,25 +91,25 @@
                                         <!--/span-->
                                     </div>
                                     <!-- <div class="form-group">
-                                        <h3 class="box-title m-t-40"> {{__('admin.Post Short Description')}}</h3>
+                                        <h3 class="box-title m-t-40"> <?php echo e(__('admin.Post Short Description')); ?></h3>
                                         <div class="row">
                                             <div class="col-md-12 ">
                                                 <div class="form-group">
                                                     <textarea name="desc" class="desc form-control"
-                                                              rows="4">{{  old('desc', isset($post->desc) ? $post->desc : '' )  }}</textarea>
+                                                              rows="4"><?php echo e(old('desc', isset($post->desc) ? $post->desc : '' )); ?></textarea>
                                                 </div>
                                             </div>
                                         </div>
 
                                     </div>
                                     <div class="form-group">
-                                        <h3 class="box-title m-t-40"> {{__('admin.Post Description')}}</h3>
+                                        <h3 class="box-title m-t-40"> <?php echo e(__('admin.Post Description')); ?></h3>
                                         <div class="row">
                                             <div class="col-md-12 ">
 
                                                 <div class="form-group  text-editor-full">
                                                     <textarea name="text" class="text form-control"
-                                                              rows="4">{{  old('text', isset($post->text) ? $post->text : '' )  }}</textarea>
+                                                              rows="4"><?php echo e(old('text', isset($post->text) ? $post->text : '' )); ?></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,12 +117,12 @@
                                     </div>
 
 
-                                    <h3 class="box-title m-t-40">{{__('admin.Add tags')}}</h3>
+                                    <h3 class="box-title m-t-40"><?php echo e(__('admin.Add tags')); ?></h3>
 
                                     <div class="tags-default">
                                         <input name="tags" style="width: 100%" class="post-tag form-grup" type="text"
-                                               value="{!! $attached_tag ?? '' !!}"
-                                               placeholder="{{__('admin.Add tags')}}"/>
+                                               value="<?php echo $attached_tag ?? ''; ?>"
+                                               placeholder="<?php echo e(__('admin.Add tags')); ?>"/>
                                     </div> -->
 
 
@@ -133,13 +135,15 @@
                                             <button type="submit" class="btn btn-block btn-success btn-lg"><i
                                                         class="fa fa-check"></i>
 
-                                                @if(isset($post->id) )
+                                                <?php if(isset($post->id) ): ?>
 
-                                                    {{__('admin.update')}}
-                                                @else
+                                                    <?php echo e(__('admin.update')); ?>
 
-                                                    {{__('admin.save')}}
-                                                @endif
+                                                <?php else: ?>
+
+                                                    <?php echo e(__('admin.save')); ?>
+
+                                                <?php endif; ?>
                                             </button>
 
                                         </div>
@@ -150,17 +154,18 @@
                                         <!--<div class="">
 
                                             <div class="form-group  shadow-group ">
-                                                <label class="control-label"><strong>  {{__('admin.Select Category')}}</strong></label>
+                                                <label class="control-label"><strong>  <?php echo e(__('admin.Select Category')); ?></strong></label>
 
 
-                                                @if($category_list == '<ul class="category-group icheck-list"></ul>')
+                                                <?php if($category_list == '<ul class="category-group icheck-list"></ul>'): ?>
 
-                                                    <a href="{{route('admin.categories.index')}}">{{__('admin.Add New Category')}}</a>
-                                                @else
+                                                    <a href="<?php echo e(route('admin.categories.index')); ?>"><?php echo e(__('admin.Add New Category')); ?></a>
+                                                <?php else: ?>
                                                     <div class="cat-group">
-                                                        {!!  $category_list !!}
+                                                        <?php echo $category_list; ?>
+
                                                     </div>
-                                                @endif
+                                                <?php endif; ?>
 
 
                                             </div>
@@ -169,13 +174,14 @@
                                         <!-- <div class="form-group">
                                             <div class="input-group">
                                                 <label for="scheduled_publication" class="control-label"><strong>
-                                                        {{__('admin.Scheduled publication')}}
+                                                        <?php echo e(__('admin.Scheduled publication')); ?>
+
 
                                                     </strong> </label>
                                                 <input id="scheduled_publication"
                                                        type="text"
                                                        name="published_at"
-                                                       value="{{  isset($post->published_at ) ? $post->published_at->format('m/d/Y H:i') : '' }}"
+                                                       value="<?php echo e(isset($post->published_at ) ? $post->published_at->format('m/d/Y H:i') : ''); ?>"
 
                                                        class="form-control mydatepicker"
                                                        placeholder="mm/dd/yyyy">
@@ -187,23 +193,24 @@
 
                                         <div class="">
                                             <div class="form-group">
-                                                <label class="control-label"><strong> {{__('admin.Status')}}</strong></label>
+                                                <label class="control-label"><strong> <?php echo e(__('admin.Status')); ?></strong></label>
                                                 <div class="radio-list">
                                                     <label class="radio-inline p-0">
                                                         <div class="radio radio-info">
-                                                            <input {{  isset($post->status ) ? checked($post->status, 'published') : '' }} type="radio"
+                                                            <input <?php echo e(isset($post->status ) ? checked($post->status, 'published') : ''); ?> type="radio"
                                                                    name="status"
                                                                    id="radio1"
                                                                    value="published">
-                                                            <label for="radio1">{{__('admin.Published')}}</label>
+                                                            <label for="radio1"><?php echo e(__('admin.Published')); ?></label>
                                                         </div>
                                                     </label>
                                                     <label class="radio-inline">
                                                         <div class="radio radio-info">
-                                                            <input {{   isset($post->status ) ?  checked($post->status, 'draft') : '' }}
+                                                            <input <?php echo e(isset($post->status ) ?  checked($post->status, 'draft') : ''); ?>
+
                                                                    type="radio" name="status" id="radio2"
                                                                    value="draft">
-                                                            <label for="radio2">{{__('admin.Draft')}}</label>
+                                                            <label for="radio2"><?php echo e(__('admin.Draft')); ?></label>
                                                         </div>
                                                     </label>
                                                 </div>
@@ -214,44 +221,44 @@
                                     <div class="">
                                         <!-- <div class="">
                                             <div class="form-group">
-                                                <label><strong> {{__('admin.Meta Description')}}</strong></label>
+                                                <label><strong> <?php echo e(__('admin.Meta Description')); ?></strong></label>
                                                 <input type="text"
-                                                       value="{{  old('meta_desc', isset($post->meta_desc) ? $post->meta_desc : '' )  }}"
+                                                       value="<?php echo e(old('meta_desc', isset($post->meta_desc) ? $post->meta_desc : '' )); ?>"
                                                        name="meta_desc" class="form-control"></div>
                                         </div> -->
                                         <!--/span-->
                                         <!-- <div class="=">
                                             <div class="form-group">
-                                                <label><strong> {{__('admin.Meta Keyword')}} </strong</label>
+                                                <label><strong> <?php echo e(__('admin.Meta Keyword')); ?> </strong</label>
                                                 <input
-                                                        value="{{  old('keywords', isset($post->keywords) ? $post->keywords : '' )  }}"
+                                                        value="<?php echo e(old('keywords', isset($post->keywords) ? $post->keywords : '' )); ?>"
 
                                                         type="text" name="keywords" class="form-control"></div>
                                         </div> -->
                                         <!--/span-->
                                         <div class="">
                                             <h3 class="box-title m-t-20">
-                                                <strong>{{__('admin.Featured Image')}} </strong></h3>
+                                                <strong><?php echo e(__('admin.Featured Image')); ?> </strong></h3>
                                             <div class="product-img">
 
-                                                @if(isset($post->img))
+                                                <?php if(isset($post->img)): ?>
                                                     <img class="img-responsive"
-                                                         src="{{ the_image_url($post->img,'thumbnail-260x260') }}">
-                                                    <input type="hidden" name="img" value="{{$post->img}}"
+                                                         src="<?php echo e(the_image_url($post->img,'thumbnail-260x260')); ?>">
+                                                    <input type="hidden" name="img" value="<?php echo e($post->img); ?>"
                                                            class="featured_image_id">
-                                                @else
+                                                <?php else: ?>
                                                     <img class="img-responsive"
-                                                         src="{{ asset(config('settings.admin')) }}/plugins/images/placeholder.png">
+                                                         src="<?php echo e(asset(config('settings.admin'))); ?>/plugins/images/placeholder.png">
                                                     <input type="hidden" name="img" value="" class="featured_image_id">
-                                                @endif
+                                                <?php endif; ?>
 
 
                                                 <br>
                                                 <br>
                                                 <div
                                                         class="set_media fileupload btn btn-info waves-effect waves-light">
-                                                    <span><i class="ion-upload m-r-5"></i> {{__('admin.Set featured Image')}} </span>
-                                                    {{--<input type="file" class="upload">--}}
+                                                    <span><i class="ion-upload m-r-5"></i> <?php echo e(__('admin.Set featured Image')); ?> </span>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -269,7 +276,8 @@
 
                                 <hr>
                             </div>
-                            {{ csrf_field()  }}
+                            <?php echo e(csrf_field()); ?>
+
                         </form>
                     </div>
                 </div>
@@ -296,7 +304,7 @@ $obj = implode( ',', $tags_arr );
 
     jQuery(document).ready(function ($) {
 
-        var data = [{!!  $obj !!}];
+        var data = [<?php echo $obj; ?>];
 
         var states = new Bloodhound({
             datumTokenizer: Bloodhound.tokenizers.whitespace,
@@ -364,7 +372,7 @@ $obj = implode( ',', $tags_arr );
             formData.append('tiny_uploader', '1');
 
             $.ajax({
-                url: '{{route('admin.media.store')}}',
+                url: '<?php echo e(route('admin.media.store')); ?>',
                 headers: {
                     'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
                 },

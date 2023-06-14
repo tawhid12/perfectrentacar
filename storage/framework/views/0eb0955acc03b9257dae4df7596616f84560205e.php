@@ -5,66 +5,35 @@
 
         <div class="main-slider">
             <div class="owl-carousel" id="main-slider">
-
-
-
-                <!-- Slide 2 -->
-                <div class="item slide2 ver2">
+               
+                <?php $sliders = \DB::table('posts')->get(); ?>
+                <?php $__empty_1 = true; $__currentLoopData = $sliders; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                                <!-- Slide 1 -->
+                                <div class="item ver<?php echo e($key); ?>" style="background-image:url('<?php echo e(the_image_url($post->img,'thumbnail-870x600')); ?>')">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
-                                <div class="div-cell">
-                                    <div class="caption-content">
-                                        <h2 class="caption-subtitle"><?php echo e(__('Find Your Car!')); ?><br /><?php echo e(__(" Rent A Car")); ?></h2>
-                                        <p class="caption-text">
-                                           
-                                        </p>
-                                        <p class="caption-text">
-                                            <a class="btn btn-theme ripple-effect btn-theme-md" href="#"><?php echo e(__("See All Vehicles")); ?></a>
-                                        </p>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /Slide 2 -->
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
+                <?php endif; ?>
 
-                <!-- Slide 3 -->
-                <div class="item slide3 ver3">
-                    <div class="caption">
-                        <div class="container">
-                            <div class="div-table">
-                                <div class="div-cell">
-                                    <div class="caption-content">
+            
+           
 
 
-                                        <h2 class="caption-title"><?php echo e(__("For rental Cars")); ?></h2>
-                                        <h3 class="caption-subtitle"><?php echo e(__("Best Deals")); ?></h3>
-                                        <p class="caption-text">
-                                            Sales Up %45 Off<br />
-                                            All Rental Cars Start from 49$
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Slide 3 -->
 
-                <!-- Slide 4 -->
-                
-                <!-- /Slide 4 -->
+    </div><!--owl Carosuel-->
 
-            </div>
-        </div>
-
+    </div>
     </div>
 </section>
 <!-- /PAGE -->
 <!-- PAGE -->
-<section class="page-section">
+<!--<section class="page-section">
     <div class="container">
 
         <div class="row">
@@ -180,157 +149,12 @@
         </div>
 
     </div>
-</section>
+</section>-->
 <!-- /PAGE -->
 
-<!-- PAGE -->
-<section class="page-section dark">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="100ms">
-                <h2 class="section-title text-left">
-
-                    <small><?php echo e(__("What Do You Know About Us")); ?></small>
-                    <span><?php echo e(__('Who We Are ?')); ?></span>
-                </h2>
-                <p><?php echo e(__("This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. ")); ?></p>
-                <ul class="list-icons">
-                    <li>
-                        <i class="fa fa-check-circle"></i><?php echo e(__("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")); ?>
-
-                    </li>
-                    <li><i class="fa fa-check-circle"></i><?php echo e(__("Proin tempus sapien non iaculis pretium.")); ?></li>
-                </ul>
-                <p class="btn-row">
-                    <a href="#" class="btn btn-theme ripple-effect btn-theme-md"><?php echo e(__("See All Vehicles")); ?></a>
-                    <a href="#" class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent"><?php echo e(__("Reservation Now")); ?></a>
-                </p>
-            </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="owl-carousel img-carousel">
-                    <div class="item"><a href="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                    <div class="item"><a href="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                    <div class="item"><a href="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                    <div class="item"><a href="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" data-gal="prettyPhoto"><img class="img-responsive" src="<?php echo e(asset(config('settings.theme'))); ?>/assets/img/preview/slider/slide-775x500x1.jpg" alt="" /></a></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
-
-<!-- PAGE -->
-<section class="page-section">
-    <div class="container">
-
-        <h2 class="section-title wow fadeInUp" data-wow-offset="70" data-wow-delay="100ms">
-            <small><?php echo e(__("What a Kind of Car You Want")); ?></small>
-            <span><?php echo e(__("Great Rental Offers for You")); ?></span>
-
-        </h2>
-
-        <div class="tabs wow fadeInUp" data-wow-offset="70" data-wow-delay="300ms">
-            <?php if($terms): ?>
-            <ul id="tabs" class="nav">
-                <?php $__currentLoopData = $terms; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                <?php if($item->type == 'category'): ?>
-                <li class="<?php echo e(($loop->index == 0 )?  'active' : ''); ?>">
-                    <a href="#tab-<?php echo e($item->alias); ?>" data-toggle="tab"><?php echo e($item->title); ?></a>
-                </li>
-                <?php endif; ?>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            </ul>
-            <?php endif; ?>
-        </div>
-        <div class="tab-content wow fadeInUp" data-wow-offset="70" data-wow-delay="500ms">
-
-            <?php $__currentLoopData = $terms; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-            <?php if($item->type == 'category'): ?>
-            <div class="sladersss tab-pane fade  <?php echo e(($loop->index == 0 )?  'active in' : ''); ?> " id="tab-<?php echo e($item->alias); ?>">
-
-                <div class="swiper swiper--<?php echo e($item->alias); ?>">
-                    <div class="swiper-container-GREAT-RENTAL swiper-container">
-
-                        <div class="swiper-wrapper">
-
-                            <!-- Slides -->
-
-                            <?php if($item->products): ?>
-                            <?php $__currentLoopData = $item->products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                            <div class="swiper-slide">
-                                <div class="thumbnail no-border no-padding thumbnail-car-card">
-                                    <div class="media">
-
-                                        <?php if(isset($product->img) && $product->img > 0): ?>
-
-                                        <a class="media-link" data-gal="prettyPhoto" href="<?php echo e(the_image_url($product->img)); ?>">
-                                            <img src="<?php echo e(the_image_url($product->img,'thumbnail-370x220')); ?>" alt="" />
-                                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
-                                        </a>
-                                        <?php endif; ?>
-
-                                    </div>
-                                    <div class="caption text-center">
-                                        <h4 class="caption-title"><a href="#"><?php echo e($product->title); ?></a>
-                                        </h4>
-                                        <div class="caption-text"><?php echo e(__('Start
-                                                            from')); ?> <?php echo e(formatted_price($product->price)); ?><?php echo e(__('/per a day')); ?>
-
-                                        </div>
-                                        <div class="buttons">
-                                            <a class="btn btn-theme ripple-effect" href="<?php echo e(route('products.show',['products'=> $product->alias ])); ?>"> <?php echo e(get_theme_mod('rentit_rent_it',__('Rent It'))); ?></a>
-                                        </div>
-                                        <table class="table">
-                                            <tr>
-                                                <?php
-                                                $product_meta = getProductMetas($product);
-
-                                                if ($product_meta['product_icons'] ?? false) {
-                                                    $product_icons = unserialize($product_meta['product_icons']);
 
 
-                                                    if (is_array($product_icons) && $product_icons['icon'] ?? false && $product_icons['text'] ?? false) {
-                                                        $product_icons = array_combine($product_icons['icon'], $product_icons['text']);
 
-
-                                                        $j = 0;
-                                                        foreach ($product_icons as $k => $text) {  ?>
-                                                            <td><i class="fa <?php echo e($k); ?>"></i> <?php echo e($text); ?></td>
-                                                <?php
-                                                        }
-                                                    }
-                                                }
-                                                ?>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            <?php endif; ?>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
-                    <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
-
-                </div>
-
-            </div>
-            <?php endif; ?>
-            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-        </div>
-
-
-    </div>
-</section>
-<!-- /PAGE -->
 
 <!-- PAGE -->
 
@@ -341,8 +165,8 @@
     <div class="container">
 
         <h2 class="section-title wow fadeInUp" data-wow-offset="70" data-wow-delay="500ms">
-            <small><?php echo e(__("Select What You Want")); ?></small>
-            <span><?php echo e(__("Our awesome Rental Fleet cars")); ?></span>
+            <!-- <small><?php echo e(__("Select What You Want")); ?></small> -->
+            <span><?php echo e(__("Our Fleet")); ?></span>
         </h2>
 
         <?php if($terms): ?>
@@ -493,7 +317,7 @@
                                                     <div class="price">
                                                         <strong><?php echo e($product->price); ?></strong><?php echo e(__(" ")); ?>
 
-                                                        <span><?php echo e(__("$/per a day ")); ?></span><i class="fa fa-info-circle"></i>
+                                                        <span><?php echo e(__("AED/per a day ")); ?></span><i class="fa fa-info-circle"></i>
                                                     </div>
                                                     <div class="list">
                                                         <ul>
@@ -570,52 +394,7 @@
 </section>
 <!-- /PAGE -->
 
-<!-- PAGE -->
-<section class="page-section image">
-    <div class="container">
 
-        <div class="row">
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-heart"></i></div>
-                        <div class="caption-number"><?php echo e(__("5657")); ?></div>
-                        <h4 class="caption-title"><?php echo e(__("Happy costumers")); ?></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="200ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-car"></i></div>
-                        <div class="caption-number"><?php echo e(__("657")); ?></div>
-                        <h4 class="caption-title"><?php echo e(__("Total car count")); ?></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-flag"></i></div>
-                        <div class="caption-number"><?php echo e(__("1.255.657")); ?></div>
-                        <h4 class="caption-title">Total KM/MIL</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="400ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-comments-o"></i></div>
-                        <div class="caption-number"><?php echo e(__("1255")); ?></div>
-                        <h4 class="caption-title"><?php echo e(__("Call Center Solutions")); ?></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
 
 <!-- PAGE -->
 
@@ -709,49 +488,7 @@
 <!-- PAGE -->
 
 
-<script type="text/javascript">
-    var
-        mapObject,
-        markers = [],
-        markersData = <?php echo $markersData; ?>};
 
-
-    function initialize_map() {
-
-
-        loadScript("/rentit/js/infobox.js", after_load);
-
-    }
-
-    function after_load() {
-        var global_scrollwheel = false;
-        var markerClusterer = null;
-        var markerCLuster;
-        var Clusterer;
-
-        initialize_new2();
-    }
-
-    function loadScript(src, callback) {
-        var s,
-            r,
-            t;
-        r = false;
-        s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = src;
-        s.onload = s.onreadystatechange = function() {
-            ////console.log( this.readyState ); //uncomment this line to see which ready states are called.
-            if (!r && (!this.readyState || this.readyState == 'complete')) {
-                r = true;
-                callback();
-            }
-        };
-        t = document.getElementsByTagName('script')[0];
-        t.parentNode.insertBefore(s, t);
-
-    }
-</script>
 <!-- /PAGE -->
 
 
@@ -763,33 +500,40 @@
 
 <!-- /PAGE -->
 
-<!-- PAGE -->
-<section class="page-section">
+
+<section style="padding:40px 0px">
     <div class="container">
 
-        
-
-        <!-- Team row -->
         <div class="row">
 
-            <!-- Team 1 -->
-            
-    <!-- /Team 1 -->
-
-    <!-- Team 2 -->
-    
-    <!-- /Team 2 -->
-
-    <!-- Team 3 -->
-    
-    <!-- /Team 3 -->
-
-    <!-- Team 4 -->
-    
-    <!-- Team 4 -->
-
-    </div>
-    <!-- /Team row -->
+            <div class="col-md-12">
+                <h2 class="caption-title text-center" style="margin-bottom:20px;"><?php echo e(__("Office Working Hours")); ?></h2>
+                <table class="table table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Friday</th>
+                            <th class="text-center">Saturday</th>
+                            <th class="text-center">Sunday</th>
+                            <th class="text-center">Monday</th>
+                            <th class="text-center">Tuesday</th>
+                            <th class="text-center">Wednesday</th>
+                            <th class="text-center">Thursday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:30 AM - 12:00 PM, 2-10 PM </td>
+                            <td>8:30 AM - 10:00 PM </td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
+                            <td>8:30 AM - 10:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
     </div>
 </section>
@@ -866,15 +610,15 @@
                 <ul class="media-list contact-list">
                     <li class="media">
                         <div class="media-left"><i class="fa fa-home"></i></div>
-                        <div class="media-body"><?php echo e(__("Adress: Dubai")); ?></div>
-                    </li>
-                    <li class="media">
-                        <div class="media-left"><i class="fa fa"></i></div>
-                        <div class="media-body"><?php echo e(__("")); ?></div>
+                        <div class="media-body"><?php echo e(__("Adress: Adress: Shop No. 06, Wasl Duet - 02 , Al Karama , Dubai , U.A.E")); ?></div>
                     </li>
                     <li class="media">
                         <div class="media-left"><i class="fa fa-phone"></i></div>
-                        <div class="media-body"><?php echo e(__("Support Phone: +971 54 495 7070")); ?></div>
+                        <div class="media-body"><?php echo e(__("Tel: +971 4 326 7557")); ?></div>
+                    </li>
+                    <li class="media">
+                        <div class="media-left"><i class="fa fa-whatsapp"></i></div>
+                        <div class="media-body"><?php echo e(__("Whatsapp: +971 54 495 7070")); ?></div>
                     </li>
                     <li class="media">
                         <div class="media-left"><i class="fa fa-envelope"></i></div>

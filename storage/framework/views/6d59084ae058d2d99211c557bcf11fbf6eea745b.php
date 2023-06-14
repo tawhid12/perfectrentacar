@@ -23,11 +23,20 @@
         .social-icons li {
             padding: 0px 10px 0 0;
         }
+        .main-slider .slide1{
+            background-image: url(rentit/assets/img/preview/slider/slide-1.jpg);
+        }
         .main-slider .slide2{
-            background-image: url(rentit/assets/img/preview/slider/slide-1.png);
+            background-image: url(rentit/assets/img/preview/slider/slide-2.jpg);
         }
         .main-slider .slide3{
-            background-image: url(rentit/assets/img/preview/slider/slide-2.png);
+            background-image: url(rentit/assets/img/preview/slider/slide-3.jpg);
+        }
+        .main-slider .slide4{
+            background-image: url(rentit/assets/img/preview/slider/slide-4.jpg);
+        }
+        .main-slider .slide5{
+            background-image: url(rentit/assets/img/preview/slider/slide-5.jpg);
         }
         .page-section.contact{
             background: url(rentit/assets/img/preview/page-section-contact-2.png);
@@ -70,6 +79,21 @@
         .media-body a{
             color:#fff;
         }
+
+        /*Nav */
+        .sf-menu.nav>li>a:focus, .sf-menu.nav>li>a:hover{
+            background:#e60000;
+        }
+        .nav {
+            background:#fff;
+        }
+        .social-icons a:hover{
+            background:#e60000;
+            border: solid 1px #e60000;
+        }
+        .main-slider .ver2:before {
+            background:none;
+        }
     </style>
 </head>
 <body id="home" class="wide <?php if(isAdminBarVisible()): ?>) adminbar <?php endif; ?>">
@@ -96,11 +120,12 @@
      
                
                     <ul class="social-icons">
-                        <li><a target="_blank" href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" href="" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
-                        <li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a target="_blank" href="" class="linkedin"><i class="fa fa-google"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/PerfectLineRentaCar/" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <!-- <li><a target="_blank" href="" class="twitter"><i class="fa fa-twitter"></i></a></li> -->
+                        <li><a target="_blank" href="https://api.whatsapp.com/send?phone=971544957070" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+                        <!-- <li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="" class="linkedin"><i class="fa fa-google"></i></a></li> -->
+                        <li><a target="_blank" href="https://goo.gl/maps/QBc2b78dDcfdgNeV6" class="linkedin"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
                     </ul>
                                                
         </div>

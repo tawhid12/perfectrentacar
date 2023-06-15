@@ -119,6 +119,12 @@
         .testimonials-carousel .testimonial .testimonial-text{
             font-size: 14px !important;
         }
+        .social-icons a{
+            display:inline-block;
+        }
+        .social-icons a span{
+            font-weight: bold;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

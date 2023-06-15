@@ -54,6 +54,7 @@ class PageController extends RentItTheme {
 
 
 		$page = \Corp\Page::where( 'alias', $slug )->first();
+		print_r($page);die;
 
 		if ( is_null( $page ) ) {
 			$this->error = true;

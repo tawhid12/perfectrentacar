@@ -122,16 +122,16 @@
         .social-icons a {
             display: inline-block;
             position: relative;
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
             text-align: center;
             background-color: transparent;
             border: solid 1px #14181c;
             color: #14181c;
         }
-        .social-icons a span{
-            font-weight: bold;
+        .social-icons a + span{
+            font-weight: 900;
         }
     </style>
 </head>

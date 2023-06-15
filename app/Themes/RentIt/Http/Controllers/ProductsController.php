@@ -100,6 +100,7 @@ class ProductsController extends RentItTheme
 
         $products = $this->product_rep->getProducts($request, $term_alias);
         $products->load('meta.translations', 'translations');
+        print_r($products);die;
         $content = $this->getTemplate('products.content', compact('products'));
 
 

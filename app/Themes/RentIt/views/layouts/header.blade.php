@@ -119,8 +119,16 @@
         .testimonials-carousel .testimonial .testimonial-text{
             font-size: 14px !important;
         }
-        .social-icons a{
-            display:inline-block;
+        .social-icons a {
+            display: inline-block;
+            position: relative;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: transparent;
+            border: solid 1px #14181c;
+            color: #14181c;
         }
         .social-icons a span{
             font-weight: bold;
@@ -148,7 +156,7 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-md-6" style="display:flex;justify-content: end;align-items: center;">
+        <div class="col-md-12" style="display:flex;justify-content: end;align-items: center;">
                    
                
                     <ul class="social-icons">

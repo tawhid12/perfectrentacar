@@ -113,7 +113,7 @@
             position: absolute;
             width: 70px;
         }
-        .testimonial .testimonial-text{
+        .testimonial .testimonial-text, .testimonial .testimonial-name{
             color:#000;
         }
     </style>

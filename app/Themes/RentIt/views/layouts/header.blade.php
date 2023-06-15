@@ -116,6 +116,9 @@
         .testimonial .testimonial-text, .testimonial .testimonial-name{
             color:#000;
         }
+        .testimonials-carousel .testimonial .testimonial-text{
+            font-size: 14px !important;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

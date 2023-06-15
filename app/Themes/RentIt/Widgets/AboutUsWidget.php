@@ -129,7 +129,7 @@ class AboutUsWidget extends Widgets {
 	 * @param $args
 	 * @param $instance
 	 */
-	function widget( $args, $instance ) {
+	/*function widget( $args, $instance ) {
 		$instance['title'] = $instance['title'] ?? '';
 		$instance['text'] = $instance['text'] ?? '';
 		$instance['social'] = $instance['social'] ?? [];
@@ -160,5 +160,5 @@ class AboutUsWidget extends Widgets {
             </div>
         </div>
 		<?php
-	}
+	}*/
 }

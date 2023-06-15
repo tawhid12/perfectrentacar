@@ -305,9 +305,9 @@ jQuery(document).ready(function () {
                     0: {items: 1},
                     479: {items: 1},
                     768: {items: 1},
-                    991: {items: 1},
-                    1024: {items: 1},
-                    1280: {items: 1}
+                    991: {items: 3},
+                    1024: {items: 3},
+                    1280: {items: 3}
                 }
             });
         }

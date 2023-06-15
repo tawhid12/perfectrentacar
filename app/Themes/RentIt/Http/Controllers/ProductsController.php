@@ -99,7 +99,7 @@ class ProductsController extends RentItTheme
 
 
         $products = $this->product_rep->getProducts($request, $term_alias);
-        print_r($products);die;
+        
         $products->load('meta.translations', 'translations');
       
         $content = $this->getTemplate('products.content', compact('products'));

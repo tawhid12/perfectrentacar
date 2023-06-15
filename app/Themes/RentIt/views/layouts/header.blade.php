@@ -96,6 +96,26 @@
         .sf-menu a{
             color:#000;
         }
+        /*Testimonial */
+        .title {
+            font-size: 35px;
+            font-weight: 800;
+            color: #29166f;
+            text-transform: uppercase;
+            margin-bottom: 80px;
+            position: relative;
+        }
+        .title span {
+            background: #29166f none repeat scroll 0 0;
+            bottom: -30px;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            width: 70px;
+        }
+        .testimonial .testimonial-text{
+            color:#000;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

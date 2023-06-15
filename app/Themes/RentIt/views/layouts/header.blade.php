@@ -122,10 +122,9 @@
                     <span style="font-weight:bold;font-size:12px;color:#000;">Whatsapp: +971 54 495 7070</span>
                
                     <ul class="social-icons">
-                        <li><a target="_blank" href="https://www.facebook.com/PerfectLineRentaCar/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <!-- <li><a target="_blank" href="" class="twitter"><i class="fa fa-twitter"></i></a></li> -->
                         <li><a target="_blank" href="https://api.whatsapp.com/send?phone=971544957070" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
-                        <!-- <li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/PerfectLineRentaCar/" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <!-- <li><a target="_blank" href="" class="twitter"><i class="fa fa-twitter"></i></a></li> -->                        <!-- <li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
                         <li><a target="_blank" href="" class="linkedin"><i class="fa fa-google"></i></a></li> -->
                         <li><a target="_blank" href="https://goo.gl/maps/QBc2b78dDcfdgNeV6" class="linkedin"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
                     </ul>

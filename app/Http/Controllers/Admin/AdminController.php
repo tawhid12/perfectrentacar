@@ -232,7 +232,7 @@ class AdminController extends CMSController {
 		);*/
 
 
-		/*$baseCms->addBackendMenu( [
+		$baseCms->addBackendMenu( [
 
 				'name' => __( 'admin.Appearance' ),
 				'slug' => 'appearance',
@@ -267,7 +267,7 @@ class AdminController extends CMSController {
 
 
 			]
-		);*/
+		);
 
 
 

@@ -6,8 +6,8 @@ use Corp\Http\Widgets\Widgets;
 
 class AboutUsWidget extends Widgets {
 	public function __construct() {
-		//$args = array( 'description' => __( 'It displays About us section' ), 'classname' => 'rentit_about_us' );
-		//parent::__construct( 'rentit_about_us', __( 'rentit About us ' ), $args );;
+		$args = array( 'description' => __( 'It displays About us section' ), 'classname' => 'rentit_about_us' );
+		parent::__construct( 'rentit_about_us', __( 'rentit About us ' ), $args );;
 	}
 
 	/**

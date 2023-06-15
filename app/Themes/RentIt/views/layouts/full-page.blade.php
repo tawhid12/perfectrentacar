@@ -5,9 +5,10 @@
 <!-- CONTENT AREA -->
 <div class="content-area pb-edit-content" data-p-id="{{app( 'request' )->route()->controller->page_id ?? ''}}">
 
-  {!! $content ?? '' !!}
+
 
 </div>
+{!! $content ?? '' !!}
 <!-- /CONTENT AREA -->
 
 <!-- FOOTER -->

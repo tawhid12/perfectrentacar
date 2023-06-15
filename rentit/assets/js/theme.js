@@ -294,7 +294,7 @@ jQuery(document).ready(function () {
             testimonialsCarousel.owlCarousel({
                 autoplay: false,
                 loop: true,
-                margin: 0,
+                margin: 10,
                 dots: true,
                 nav: false,
                 navText: [

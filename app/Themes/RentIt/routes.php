@@ -154,6 +154,7 @@ Route::group( [
 	] )->where( 'term_alias', '[\w-]+' );
 
 	Route::get( '/hot-offers', 'ProductsController@hotOffers');
+	Route::get( '/mail', 'TestController@index');
 
 // for controllers and views
 	Route::get( '{page}', array( 'as' => 'pages.show', 'uses' => 'PageController@show' ) );

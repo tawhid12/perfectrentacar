@@ -69,7 +69,7 @@
 
                     <div class="outer required">
                         <div class="form-group af-inner">
-                            <input type="submit" name="submit" class="form-button form-button-submit btn btn-block btn-theme ripple-effect btn-theme-dark" id="submit_btn" value="Send message" />
+                            <input type="submit" name="submit" class="form-button form-button-submit btn btn-block ripple-effect btn-theme-dark" id="submit_btn" value="Send message" />
                         </div>
                     </div>
 

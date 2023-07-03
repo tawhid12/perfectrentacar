@@ -8,7 +8,7 @@ class TestController extends RentItTheme
 {
     public function index(Request $request){
 
-        \Mail::send('mail.reply_body_admin', [$msg => $request->message,$to => $request->email], function ($message) use ($request){
+        \Mail::send('mail.reply_body_admin', ['msg' => $request->message,'to' => $request->email], function ($message) use ($request){
             $message->from('no-reply@perfectrentacar.com', 'Perfectrentacar')
                     ->to('tawhid102@gmail.com')
                     ->subject($request->subject);

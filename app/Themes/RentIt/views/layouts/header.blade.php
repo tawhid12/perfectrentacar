@@ -81,7 +81,7 @@
 
         /*Nav */
         .sf-menu.nav>li>a:focus, .sf-menu.nav>li>a:hover{
-            background:#e60000;
+            border:#e60000;
         }
         .nav {
             background:#fff;
@@ -133,6 +133,27 @@
         .social-icons a + span{
             font-weight: 900;
         }
+        .navigation{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .navigation i.fa{
+            font-size: 22px;
+            padding: 5px 8px;
+        }
+        i.fa.fa-whatsapp {
+            color: #fff;
+            background-color: green;
+        }
+        i.fa.fa-facebook {
+            color: #fff;
+            background-color: #1877F2;
+        }
+        i.fa.fa-map-marker {
+            color: red;
+            border: 1px solid #000;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">
@@ -153,23 +174,7 @@
     </div>
     <!-- /PRELOADER -->
 @endif
-<div class="container">
-    <div class="row">
 
-        <div class="col-md-12" style="display:flex;justify-content: end;align-items: center;">
-                   
-               
-                    <ul class="social-icons">
-                        <li><a target="_blank" href="https://api.whatsapp.com/send?phone=971544957070" class="whatsapp"><i class="fa fa-whatsapp"></i></a><span>+971 54 495 7070</span></li>
-                        <li><a target="_blank" href="https://www.facebook.com/PerfectLineRentaCar/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <!-- <li><a target="_blank" href="" class="twitter"><i class="fa fa-twitter"></i></a></li> -->                        <!-- <li><a target="_blank" href="" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a target="_blank" href="" class="linkedin"><i class="fa fa-google"></i></a></li> -->
-                        <li><a target="_blank" href="https://goo.gl/maps/QBc2b78dDcfdgNeV6" class="linkedin"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                    </ul>
-                                               
-        </div>
-    </div>
-</div>
 <!-- WRAPPER -->
 <div class="wrapper">
 

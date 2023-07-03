@@ -99,6 +99,8 @@ class ProductsController extends RentItTheme
 
 
         $products = $this->product_rep->getProducts($request, $term_alias);
+
+
         
         $products->load('meta.translations', 'translations');
       
@@ -269,5 +271,40 @@ class ProductsController extends RentItTheme
 
     }
 
+    public function hotOffers(\Illuminate\Http\Request $request, $term_alias = false){
 
+        $this->fillSession($request);
+
+        $this->title = getControllerTitle(__('Hot Offers'));
+
+
+        $products = $this->product_rep->getProducts($request, $term_alias);
+
+        $products->load('meta.translations', 'translations');
+      
+        $content = $this->getTemplate('products.hot-offer', compact('products'));
+
+
+        $page_title = __('Offers');
+        if ($term_alias) {
+            $page_title = Term::where('alias', $term_alias)->first()->title;
+        }
+
+        $breadcrumbs = $this->getTemplate('breadcrumbs', ['title' => $page_title]);
+
+
+        $sidebar = $this->getTemplate('sidebar', ['sidebar' => 'rentit-sidebar-shop']);
+        $footer = $this->getTemplate('footer', ['hide_widgets' => true]);
+
+
+        $this->vars = array_add($this->vars, 'content', $content);
+        $this->vars = array_add($this->vars, 'breadcrumbs', $breadcrumbs);
+        $this->vars = array_add($this->vars, 'sidebar', $sidebar);
+        $this->vars = array_add($this->vars, 'footer', $footer);
+
+
+        return $this->renderOutput();
+
+    }
+    
 }

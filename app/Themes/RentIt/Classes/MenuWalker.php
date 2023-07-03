@@ -36,8 +36,11 @@ class MenuWalker {
 			}
 			$text .= $this->end_el( $level , $parent_item);
 		}
-
+		$text .= '<li class="no-hover"><a target="_blank" class="whatsapp" href="https://api.whatsapp.com/send?phone=971544957070"><i class="fa fa-whatsapp"></i></a></li>';
+		$text .= '<li class="no-hover"><a target="_blank" class="facebook" href="https://www.facebook.com/PerfectLineRentaCar/"><i class="fa fa-facebook"></i></a></li>';
+		$text .= '<li class="no-hover"><a target="_blank" href="https://goo.gl/maps/QBc2b78dDcfdgNeV6" class="linkedin"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>';
 		$text .= $this->end_lvl( $level );
+		
 
 		return $text;
 	}

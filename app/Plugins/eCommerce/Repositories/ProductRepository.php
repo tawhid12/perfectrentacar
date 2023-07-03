@@ -523,7 +523,9 @@ WHERE `et`.`type` = 'category' and  et.alias = ?)
 					}
 
 				}
+				if ($request->is('hot-offers')) {
 
+				}
 
 				//
 				if ( isset( $request->PickingUpDate ) && isset( $request->DroppingOffDate ) ) {

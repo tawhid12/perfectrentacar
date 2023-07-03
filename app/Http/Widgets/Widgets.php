@@ -103,7 +103,7 @@ class Widgets {
 	 * @param $instance
 	 */
 	public function widget( $args, $instance ) {
-		die( 'function lr_Widget::widget() must be over-ridden in a sub-class.' );
+		//die( 'function lr_Widget::widget() must be over-ridden in a sub-class.' );
 	}
 
 	/**

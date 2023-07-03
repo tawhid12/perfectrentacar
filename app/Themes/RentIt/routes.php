@@ -153,7 +153,7 @@ Route::group( [
 		'as' => 'productTerm'
 	] )->where( 'term_alias', '[\w-]+' );
 
-
+	Route::get( '/hot-offers', 'ProductsController@hotOffers');
 
 // for controllers and views
 	Route::get( '{page}', array( 'as' => 'pages.show', 'uses' => 'PageController@show' ) );

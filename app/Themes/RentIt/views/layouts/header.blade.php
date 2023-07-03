@@ -154,6 +154,11 @@
             color: red;
             border: 1px solid #000;
         }
+        .div-cell, .div-table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

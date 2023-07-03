@@ -1009,8 +1009,7 @@ alt="Testimonial avatar">
 
 
     </div>
-</section>
-<div class="container" style="margin-top:50px;">
+    <div class="container" style="margin-top:50px;">
     <div class="row">
         <h4>Our Location</h4>
         <div class="col-md-12">
@@ -1018,3 +1017,4 @@ alt="Testimonial avatar">
         </div>
     </div>
 </div>
+</section>

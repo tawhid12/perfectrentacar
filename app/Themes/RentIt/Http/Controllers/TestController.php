@@ -3,6 +3,7 @@
 namespace Corp\Themes\RentIt\Http\Controllers;
 use Corp\Themes\RentIt\RentItTheme;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class TestController extends RentItTheme
 {
@@ -18,6 +19,11 @@ class TestController extends RentItTheme
                     ->to($request->email)
                     ->subject($request->subject);
         });
+        // Set success message
+        Session::flash('success', 'Data has been successfully stored.');
+
+        // Redirect back or to a specific route
+        return redirect()->back();
         
     }
 }

@@ -13,7 +13,7 @@
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
-                            <section class="page-section dark">
+                            <section class="contact">
     <div class="container">
 
         <!-- Get in touch -->

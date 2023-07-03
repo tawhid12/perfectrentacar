@@ -155,7 +155,7 @@
             border: 1px solid #000;
         }
         .div-cell, .div-table {
-            display: flex;
+            display: flex !important;
             justify-content: center;
             align-items: center;
         }

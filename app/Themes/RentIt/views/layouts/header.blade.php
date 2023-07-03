@@ -159,11 +159,14 @@
             justify-content: center;
             align-items: center;
         }
+        .contact{
+            color: #fff;
+        }
         .contact #contact-form .form-control {
-  background: rgba(20,24,28,.8);
-  border: 1px solid rgba(20,24,28,0);
-  color: #fff;
-}
+            background: rgba(20,24,28,.8);
+            border: 1px solid rgba(20,24,28,0);
+            color: #fff;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

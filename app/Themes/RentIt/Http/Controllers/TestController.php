@@ -11,7 +11,7 @@ class TestController extends RentItTheme
 
         \Mail::send('mail.reply_body_admin', ['msg' => $request->message,'to' => $request->email], function ($message) use ($request){
             $message->from('no-reply@perfectrentacar.com', 'Perfectrentacar')
-                    ->to('tawhid102@gmail.com')
+                    ->to('perfectlinerac@yahoo.com')
                     ->subject($request->subject);
         });
         \Mail::send('mail.reply_body_user', [], function ($message) use ($request){
@@ -20,7 +20,7 @@ class TestController extends RentItTheme
                     ->subject($request->subject);
         });
         // Set success message
-        Session::flash('success', 'Data has been successfully stored.');
+        Session::flash('success', 'We Have Received Your Mail.');
 
         // Redirect back or to a specific route
         return redirect()->back();

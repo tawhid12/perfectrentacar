@@ -164,7 +164,7 @@
         .contact{
             color: #fff;
         }
-        .contact #contact-form .form-control {
+        .contact #contact-form1 .form-control {
             background: rgba(20,24,28,.8);
             border: 1px solid rgba(20,24,28,0);
             color: #fff;

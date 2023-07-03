@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' https://perfectrentacar.com/ 'unsafe-inline' 'unsafe-eval';  media-src *">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="{{$description ?? ''}}"/>
     <meta name="keywords" content="{{$keywords ?? ''}}"/>
-    <meta https-equiv="Content-Security-Policy" content="default-src *;" />
+    
     <title>{{$title ?? ''}}</title>
 
     <!--<link rel="apple-touch-icon-precomposed" sizes="144x144"

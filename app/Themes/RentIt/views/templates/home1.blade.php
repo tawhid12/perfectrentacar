@@ -24,7 +24,7 @@
                                         <!-- Get in touch -->
 
                                         <h2 class="section-title wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms" style="color:#fff;">
-                                            <small>Feel Free to Say Hello!</small>
+                                            <small style="color:#fff;">Feel Free to Say Hello!</small>
                                             <span>{{__("Get in Touch With Us")}}</span>
                                         </h2>
 

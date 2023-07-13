@@ -262,8 +262,6 @@ class ProductsController extends RentItTheme
     public function store(OrderRepository $order_rep, OrderAddRequest $request, Order $order)
     {
         //
-
-
         $order_rep->AddToCart($request);
 
         return redirect()->route('FrontendCheckout');

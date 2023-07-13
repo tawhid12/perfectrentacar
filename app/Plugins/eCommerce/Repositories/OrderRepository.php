@@ -262,9 +262,11 @@ class OrderRepository extends Repository {
 
 			$to = $request->email;
 
-			
+			try {
 				Mail::to( $to )->send( new OrdersEmail( $request, $this->model ) );
-	
+			} catch ( \Exception $e){
+
+			}
 			return [
 				'status' => __( 'you have successfully rented!' ),
 				'id' => $this->model->id

@@ -14,7 +14,7 @@
                 @php $sliders = \DB::table('posts')->get(); @endphp
                 @forelse($sliders as $key => $post)
                 <!-- Slide 1 -->
-                <div class="item" style="background-image:url('{{ the_image_url($post->img,'thumbnail-870x600') }}')">
+                <div class="item ver1" style="background-image:url('{{ the_image_url($post->img,'thumbnail-870x600') }}')">
                     <div class="caption">
                         <div class="container">
                             <div class="div-table">
@@ -81,7 +81,7 @@
                                                 </form>
                                                 <!-- /Contact form -->
                                             </div>
-                                            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms">
+                                            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms" style="background-color: #433325;">
 
                                                 <p>{{__(" At Perfect Line,Our customer's satisfaction comes first,We provide mobility solutions that benefit")}}</p>
 

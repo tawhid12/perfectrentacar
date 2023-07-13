@@ -81,7 +81,7 @@
                                                 </form>
                                                 <!-- /Contact form -->
                                             </div>
-                                            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms" style="background-color: #433325;">
+                                            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms">
 
                                                 <p>{{__(" At Perfect Line,Our customer's satisfaction comes first,We provide mobility solutions that benefit")}}</p>
 

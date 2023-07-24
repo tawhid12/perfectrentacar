@@ -170,6 +170,17 @@
             color: #fff;
             font-size: 16px;
         }
+        @media only screen and (max-width: 1000px) {
+            .section-title small{
+                font-size: 24px;
+            }
+            .section-title small+span{
+                font-size: 30px;
+            }
+            .media-list li.media{
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

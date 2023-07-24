@@ -169,6 +169,7 @@
             background: rgba(20,24,28,.8);
             border: 1px solid rgba(20,24,28,0);
             color: #fff;
+            font-size: 16px;
         }
     </style>
 </head>

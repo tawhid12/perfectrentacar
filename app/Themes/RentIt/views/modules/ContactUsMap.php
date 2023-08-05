@@ -57,8 +57,8 @@
 				<h2 class="edit block-title"><span>Contact Form</span></h2>
 
 				<!-- Contact form -->
-				<form name="contact-form" method="post" action="{{route('mail')}}" class="contact-form" id="contact-form">
-				@csrf
+				<form name="contact-form" method="post" action="<?php route('mail') ?>" class="contact-form" id="contact-form">
+				<?php csrf(); ?>
 
 					<div class="edit outer required">
 						<div class="edit form-group af-inner">

@@ -23,9 +23,9 @@ class ContactUs extends BaseModule {
 			return $module->value;
 		}
 
-echo 'ok';die;
 
-		//return view( 'theme:rentit::modules.ContactUs' )->render();
+
+		return view( 'theme:rentit::modules.ContactUs' )->with( compact( 'id' ) )->render();
 	}
 
 

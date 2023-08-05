@@ -50,8 +50,8 @@
         <div class="row">
             <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="200ms">
                 <!-- Contact form -->
-                <form name="contact-form" method="post" action="#" class="contact-form" id="contact-form">
-
+                <form name="contact-form" method="post" action="{{route('mail')}}" class="contact-form" id="contact-form">
+                @csrf
                     <div class="row">
                         <div class="col-md-6">
 

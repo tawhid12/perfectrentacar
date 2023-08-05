@@ -58,11 +58,7 @@
 
 				<!-- Contact form -->
 				<form name="contact-form" method="post" action="<?php echo route('mail'); ?>" class="contact-form" id="contact-form">
-				<?php
-  echo request()->session()->get('_token');
-    $csrfToken = isset($_SESSION['_token']) ? $_SESSION['_token'] : '';
-    ?>
-    <input type="hidden" name="_token" value="<?php echo $csrfToken; ?>">
+    <input type="hidden" name="_token" value="<?php echo request()->session()->get('_token'); ?>">
 					<div class="edit outer required">
 						<div class="edit form-group af-inner">
 							<label class="edit sr-only" for="name">Name</label>

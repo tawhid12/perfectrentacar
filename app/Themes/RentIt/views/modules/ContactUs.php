@@ -57,8 +57,8 @@
 				<h2 class="edit block-title"><span>Contact Form</span></h2>
 
 				<!-- Contact form -->
-				<form name="contact-form" method="post" action="<?php route('mail') ?>" class="edit contact-form" id="contact-form">
-				<input type="hidden" name="_token" value="v1Meay0q43aAvRZgR2SwMeTHzXNP7ftezbFQE1JY">
+				<form name="contact-form" method="post" action="#" class="edit contact-form" id="contact-form">
+
 					<div class="edit outer required">
 						<div class="edit form-group af-inner">
 							<label class="edit sr-only" for="name">Name</label>

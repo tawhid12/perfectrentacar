@@ -1,12 +1,12 @@
 @extends('theme:rentit::layouts.blog')
 @section('breadcrumbs')
-    {!! $breadcrumbs ?? '' !!}
+{!! $breadcrumbs ?? '' !!}
 
 @endsection
 
 
 @section('sidebar')
-    {!! $sidebar ?? '' !!}
+{!! $sidebar ?? '' !!}
 
 @endsection
 
@@ -14,30 +14,30 @@
 
 
 @section('content')
-    {!! isset($content) ? $content : '' !!}
+{!! isset($content) ? $content : '' !!}
 
 @endsection
 @section('content-area')
-    <section class="page-section with-sidebar sub-page">
-        <div class="container">
-            <div class="row">
-                <!-- SIDEBAR -->
-                <div class="col-md-9 content car-listing" id="content">
-                    @yield('content')
-                </div>
-                <!-- /SIDEBAR -->
-
-                <!-- CONTENT -->
-                <div class="col-md-3 sidebar"  id="sidebar">
-                    @yield('sidebar')
-                </div>
-                <!-- /CONTENT -->
-
+<section class="page-section with-sidebar sub-page">
+    <div class="container">
+        <div class="row">
+            <!-- SIDEBAR -->
+            <div class="col-md-9 content car-listing" id="content">
+                @yield('content')
             </div>
-        </div>
-    </section>
+            <!-- /SIDEBAR -->
 
-    <section class="page-section contact dark">
+            <!-- CONTENT -->
+            <div class="col-md-3 sidebar" id="sidebar">
+                @yield('sidebar')
+            </div>
+            <!-- /CONTENT -->
+
+        </div>
+    </div>
+</section>
+
+<section class="page-section contact dark">
     <div class="container">
 
         <!-- Get in touch -->
@@ -50,8 +50,9 @@
         <div class="row">
             <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="200ms">
                 <!-- Contact form -->
-                <form name="contact-form" method="post" action="{{route('mail')}}" class="contact-form" id="contact-form">
-                @csrf
+                <!-- Contact form -->
+                <form method="post" action="{{route('mail')}}" class="contact-form" id="contact-form1">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6">
 
@@ -93,11 +94,12 @@
 
                     <div class="outer required">
                         <div class="form-group af-inner">
-                            <input type="submit" name="submit" class="form-button form-button-submit btn btn-block btn-theme ripple-effect btn-theme-dark" id="submit_btn" value="Send message" />
+                            <input type="submit" name="submit" class="form-button form-button-submit btn btn-block ripple-effect btn-theme-dark" id="submit_btn" value="Send message" />
                         </div>
                     </div>
 
                 </form>
+                <!-- /Contact form -->
                 <!-- /Contact form -->
             </div>
             <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms">
@@ -151,5 +153,5 @@
 
 
 @section('footer')
-    {!! $footer ?? '' !!}
+{!! $footer ?? '' !!}
 @endsection

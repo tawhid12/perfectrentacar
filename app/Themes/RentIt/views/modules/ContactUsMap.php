@@ -58,7 +58,7 @@
 
 				<!-- Contact form -->
 				<form name="contact-form" method="post" action="<?php route('mail') ?>" class="contact-form" id="contact-form">
-				<?php csrf(); ?>
+				<input type="hidden" name="_token" value="v1Meay0q43aAvRZgR2SwMeTHzXNP7ftezbFQE1JY">
 
 					<div class="edit outer required">
 						<div class="edit form-group af-inner">

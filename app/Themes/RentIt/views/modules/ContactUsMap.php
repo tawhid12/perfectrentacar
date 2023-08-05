@@ -59,7 +59,7 @@
 				<!-- Contact form -->
 				<form name="contact-form" method="post" action="<?php echo route('mail'); ?>" class="contact-form" id="contact-form">
 				<?php
-    session_start();
+
     $csrfToken = isset($_SESSION['_token']) ? $_SESSION['_token'] : '';
     ?>
     <input type="hidden" name="_token" value="<?php echo $csrfToken; ?>">

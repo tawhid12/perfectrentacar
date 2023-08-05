@@ -25,7 +25,7 @@ class ContactUs extends BaseModule {
 
 
 
-		return view( 'theme:rentit::modules.ContactUs' )->render();
+		//return view( 'theme:rentit::modules.ContactUs' )->render();
 	}
 
 

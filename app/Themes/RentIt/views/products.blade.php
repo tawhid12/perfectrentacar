@@ -52,7 +52,7 @@
                 <!-- Contact form -->
                 <!-- Contact form -->
                 <form method="post" action="{{route('mail')}}" class="contact-form" id="contact-form1">
-                    @csrf
+                    {{csrf()}}
                     <div class="row">
                         <div class="col-md-6">
 

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Session;
 class TestController extends RentItTheme
 {
     public function index(Request $request){
-
+echo 'ok';die;
         \Mail::send('mail.reply_body_admin', ['msg' => $request->message,'to' => $request->email], function ($message) use ($request){
             $message->from('no-reply@perfectrentacar.com', 'Perfectrentacar')
                     ->to('perfectlinerac@yahoo.com')

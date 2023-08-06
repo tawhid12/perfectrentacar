@@ -37,6 +37,12 @@
     </div>
 </section>
 
+@if(Session::has('success'))
+<div class="alert alert-success">
+    {{ Session::get('success') }}
+</div>
+@endif
+
 <section class="page-section contact dark">
     <div class="container">
 

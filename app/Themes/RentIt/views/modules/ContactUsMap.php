@@ -51,7 +51,11 @@
 
 				</div>
 			</div>
-
+			@if(Session::has('success'))
+<div class="alert alert-success">
+    {{ Session::get('success') }}
+</div>
+@endif
 			<div class="edit col-md-8 text-left">
 
 				<h2 class="edit block-title"><span>Contact Form</span></h2>

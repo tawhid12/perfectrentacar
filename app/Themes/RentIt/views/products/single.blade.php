@@ -496,10 +496,6 @@
 
         <!------------------------------------------------------->
         @if($available_gateways  =$PaymentGateways->get_available_payment_gateways())
-        @php
-        echo '<pre>';
-print_r($available_gateways);
-@endphp
             @foreach($available_gateways as $gateway)
 
                 <div class="panel panel-default">
@@ -510,7 +506,7 @@ print_r($available_gateways);
                                aria-expanded="false" aria-controls="collapseTwo">
 
                         <span class="dot"><input class="dn" type="radio" name="payment"
-                                                 value="{{$gateway->id}}"></span>{{$gateway->method_title}}
+                                                 value="{{$gateway->id}}"></span>{{--$gateway->method_title--}}Offline Payment
                             </a>
                         </h4>
                     </div>
@@ -518,7 +514,7 @@ print_r($available_gateways);
                          aria-labelledby="heading2">
                         <div class="panel-body">
                             <div class="alert alert-success" role="alert">
-                                {{$gateway->method_description}}
+                                {{--$gateway->method_description--}}You can make Payments by cash, in our office.
                             </div>
                         </div>
                     </div>

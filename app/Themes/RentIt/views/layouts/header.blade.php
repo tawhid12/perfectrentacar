@@ -181,6 +181,9 @@
                 font-size: 18px;
             }
         }
+        .sidebar .widget+.widget{
+            display: none;
+        }
     </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">

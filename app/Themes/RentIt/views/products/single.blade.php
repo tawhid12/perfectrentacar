@@ -496,7 +496,9 @@
 
         <!------------------------------------------------------->
         @if($available_gateways  =$PaymentGateways->get_available_payment_gateways())
-
+        @php
+print_r($available_gateways);die;
+@endphp
             @foreach($available_gateways as $gateway)
 
                 <div class="panel panel-default">

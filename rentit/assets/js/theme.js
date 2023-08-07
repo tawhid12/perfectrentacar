@@ -180,11 +180,10 @@ jQuery(document).ready(function () {
         });
         // Main slider
         if (mainSlider.length) {
-            var autoplayTimeout = 1000; // 1 minute in milliseconds
             mainSlider.owlCarousel({
                 //items: 1,
                 autoplay: true,
-                autoplayTimeout:autoplayTimeout,
+                autoplayTimeout:60000,
                 autoplayHoverPause: true,
                 mouseDrag:false,
                 touchDrag:false,
@@ -203,23 +202,6 @@ jQuery(document).ready(function () {
                     768: {items: 1},
                     991: {items: 1},
                     1024: {items: 1}
-                }
-            });
-            var inputFocused = false;
-
-            // Listen for input focus and blur events
-            $('input').on('focus', function() {
-                inputFocused = true;
-                mainSlider.trigger('stop.owl.autoplay');
-            }).on('blur', function() {
-                inputFocused = false;
-                mainSlider.trigger('play.owl.autoplay', [mainSlider.options.autoplayTimeout]);
-            });
-            
-            // Check if input is focused on autoplay timeout
-            mainSlider.on('changed.owl.carousel', function(event) {
-                if (inputFocused) {
-                mainSlider.trigger('stop.owl.autoplay');
                 }
             });
         }

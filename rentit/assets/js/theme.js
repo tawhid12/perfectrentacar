@@ -182,7 +182,7 @@ jQuery(document).ready(function () {
         if (mainSlider.length) {
             mainSlider.owlCarousel({
                 //items: 1,
-                autoplay: false,
+                autoplay: true,
                 autoplayTimeout:1000,
                 autoplayHoverPause: true,
                 mouseDrag:false,

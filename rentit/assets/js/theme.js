@@ -204,25 +204,24 @@ jQuery(document).ready(function () {
                     1024: {items: 1}
                 }
             });
-            var inputFocused = false;
+        }
+        var inputFocused = false;
 
             // Listen for input focus and blur events
             $('input').on('focus', function() {
-            inputFocused = true;
-            mainSlider.trigger('stop.owl.autoplay');
+                inputFocused = true;
+                mainSlider.trigger('stop.owl.autoplay');
             }).on('blur', function() {
-            inputFocused = false;
-            mainSlider.trigger('play.owl.autoplay', [owl.options.autoplayTimeout]);
-            });
-
-            // Check if input is focused on autoplay timeout
-            mainSlider.on('changed.owl.carousel', function(event) {
-            if (inputFocused) {
-                owl.trigger('stop.owl.autoplay');
-            }
+                inputFocused = false;
+                mainSlider.trigger('play.owl.autoplay', [mainSlider.options.autoplayTimeout]);
             });
             
-        }
+            // Check if input is focused on autoplay timeout
+            mainSlider.on('changed.owl.carousel', function(event) {
+                if (inputFocused) {
+                mainSlider.trigger('stop.owl.autoplay');
+                }
+            });
         // Top products carousel
         if (topProductsCarousel.length) {
             topProductsCarousel.owlCarousel({

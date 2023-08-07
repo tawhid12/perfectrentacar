@@ -185,6 +185,8 @@ jQuery(document).ready(function () {
                 autoplay: false,
                 autoplayTimeout:1000,
                 autoplayHoverPause: true,
+                mouseDrag:false,
+                touchDrag:false,
                 loop: true,
                 margin: 0,
                 dots: true,

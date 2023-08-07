@@ -183,7 +183,7 @@ jQuery(document).ready(function () {
             mainSlider.owlCarousel({
                 //items: 1,
                 autoplay: true,
-                autoplayTimeout:1000,
+                autoplayTimeout:60000,
                 autoplayHoverPause: true,
                 mouseDrag:false,
                 touchDrag:false,
@@ -204,6 +204,24 @@ jQuery(document).ready(function () {
                     1024: {items: 1}
                 }
             });
+            var inputFocused = false;
+
+            // Listen for input focus and blur events
+            $('input').on('focus', function() {
+            inputFocused = true;
+            mainSlider.trigger('stop.owl.autoplay');
+            }).on('blur', function() {
+            inputFocused = false;
+            mainSlider.trigger('play.owl.autoplay', [owl.options.autoplayTimeout]);
+            });
+
+            // Check if input is focused on autoplay timeout
+            mainSlider.on('changed.owl.carousel', function(event) {
+            if (inputFocused) {
+                owl.trigger('stop.owl.autoplay');
+            }
+            });
+            
         }
         // Top products carousel
         if (topProductsCarousel.length) {

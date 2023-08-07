@@ -100,7 +100,7 @@
                                                     </li>
                                                     <li class="media">
                                                         <div class="media-left"><i class="fa fa-home"></i></div>
-                                                        <div class="media-body">{{__("Adress: Adress: Shop No. 06, Wasl Duet - 02 , Al Karama , Dubai , U.A.E")}}</div>
+                                                        <div class="media-body">{{__("Adress: Shop No. 06, Wasl Duet - 02 , Al Karama , Dubai , U.A.E")}}</div>
                                                     </li>
 
                                                 </ul>

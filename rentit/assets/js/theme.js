@@ -205,8 +205,7 @@ jQuery(document).ready(function () {
                     1024: {items: 1}
                 }
             });
-        }
-        var inputFocused = false;
+            var inputFocused = false;
 
             // Listen for input focus and blur events
             $('input').on('focus', function() {
@@ -223,6 +222,8 @@ jQuery(document).ready(function () {
                 mainSlider.trigger('stop.owl.autoplay');
                 }
             });
+        }
+
             
         // Top products carousel
         if (topProductsCarousel.length) {

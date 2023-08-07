@@ -183,7 +183,7 @@ jQuery(document).ready(function () {
             mainSlider.owlCarousel({
                 //items: 1,
                 autoplay: true,
-                autoplayTimeout:60000,
+                autoplayTimeout:1000,
                 autoplayHoverPause: true,
                 mouseDrag:false,
                 touchDrag:false,
